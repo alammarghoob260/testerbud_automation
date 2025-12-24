@@ -19,7 +19,7 @@ class LoginPage {
   async login(email, password) {
     Logger.info('Filling email field');
     await this.emailInput.fill(email);
-    
+
     Logger.info('Filling password field');
     await this.passwordInput.fill(password);
 
@@ -39,13 +39,13 @@ class LoginPage {
     Logger.info('Verifying welcome message visibility');
     await this.welcomeMessage.waitFor({ state: 'visible' });
     const isVisible = await this.welcomeMessage.isVisible();
-    
+
     if (isVisible) {
       Logger.success('Welcome message is visible');
     } else {
       Logger.warn('Welcome message is not visible');
     }
-    
+
     return isVisible;
   }
 }

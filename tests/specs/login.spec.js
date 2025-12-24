@@ -12,7 +12,7 @@ const password = process.env.PASSWORD;
 
 test('login flow with first practice site', async ({ practiceSitePage }) => {
   Logger.info('Starting Login Test');
-  
+
   try {
     Logger.info('Selecting first practice site');
     await practiceSitePage.selectPracticeSite(0);
@@ -20,7 +20,7 @@ test('login flow with first practice site', async ({ practiceSitePage }) => {
     Logger.info(`Attempting login with email: ${email}`);
     const loginPage = new LoginPage(practiceSitePage.page);
     await loginPage.login(email, password);
-    
+
     Logger.info('Verifying welcome message');
     const welcomeVisible = await loginPage.verifyWelcomeMessage();
 

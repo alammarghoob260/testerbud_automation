@@ -6,7 +6,7 @@ import { Logger } from '../utils/Logger.js';
 const test = base.extend({
   practiceSitePage: async ({ page }, use) => {
     Logger.info('Setting up practiceSitePage fixture');
-    
+
     try {
       // Navigate to homepage
       Logger.info(`Navigating to ${homePageUrl}`);
@@ -55,14 +55,14 @@ const test = base.extend({
       };
 
       // Pass page + helpers to test
-      await use({ 
-        page, 
+      await use({
+        page,
         selectPracticeSite,
         navigateHome,
         waitForElement,
-        isPageReady
+        isPageReady,
       });
-      
+
       Logger.info('Fixture teardown completed');
     } catch (error) {
       Logger.error(`Fixture setup failed: ${error.message}`);

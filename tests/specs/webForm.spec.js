@@ -6,7 +6,7 @@ import { Logger } from '../../src/utils/Logger.js';
 
 test('Web Form Automation flow with dummy data', async ({ practiceSitePage }) => {
   Logger.info('Starting Web Form Automation Test');
-  
+
   try {
     // Step 1: Select second practice site (Web Form Automation)
     Logger.info('Selecting second practice site (Web Form Automation)');

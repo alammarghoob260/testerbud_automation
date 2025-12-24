@@ -110,10 +110,12 @@ Provides a custom `practiceSitePage` fixture with helper methods:
 ### Page Objects
 
 **LoginPage.js**
+
 - `login(email, password)` - Perform login action
 - `verifyWelcomeMessage()` - Verify successful login
 
 **AutomateWebFormPage.js**
+
 - `fillForm(data)` - Fill all form fields with provided data
 - `verifySuccessMessage()` - Verify form submission success
 
@@ -122,11 +124,11 @@ Provides a custom `practiceSitePage` fixture with helper methods:
 Color-coded logging with timestamps:
 
 ```javascript
-Logger.info('Information message');      // Cyan
-Logger.success('Success message');       // Green
-Logger.warn('Warning message');          // Yellow
-Logger.error('Error message');           // Red
-Logger.debug('Debug message');           // Magenta
+Logger.info('Information message'); // Cyan
+Logger.success('Success message'); // Green
+Logger.warn('Warning message'); // Yellow
+Logger.error('Error message'); // Red
+Logger.debug('Debug message'); // Magenta
 ```
 
 ### Data Validator

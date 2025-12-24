@@ -27,7 +27,7 @@ class DataValidator {
   static isValidDate(dateString) {
     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
     if (!dateRegex.test(dateString)) return false;
-    
+
     const date = new Date(dateString);
     return date instanceof Date && !isNaN(date);
   }
@@ -64,7 +64,7 @@ class DataValidator {
 
     return {
       isValid: errors.length === 0,
-      errors
+      errors,
     };
   }
 
@@ -83,7 +83,7 @@ class DataValidator {
 
     return {
       isValid: errors.length === 0,
-      errors
+      errors,
     };
   }
 }

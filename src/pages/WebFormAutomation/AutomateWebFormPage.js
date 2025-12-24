@@ -54,28 +54,28 @@ class AutomateWebFormPage {
   async fillForm(data) {
     Logger.info(`Selecting country: ${data.country}`);
     await this.countryDropdown.selectOption({ label: data.country });
-    
+
     Logger.info(`Selecting title: ${data.title}`);
     await this.titleDropdown.selectOption({ label: data.title });
-    
+
     Logger.info(`Filling first name: ${data.firstName}`);
     await this.firstNameInput.fill(data.firstName);
-    
+
     Logger.info(`Filling last name: ${data.lastName}`);
     await this.lastNameInput.fill(data.lastName);
-    
+
     Logger.info(`Filling date of birth: ${data.dob}`);
     await this.dobInput.fill(data.dob);
-    
+
     Logger.info(`Filling joining date: ${data.joiningDate}`);
     await this.joiningDateInput.fill(data.joiningDate);
-    
+
     Logger.info(`Filling email: ${data.email}`);
     await this.emailInput.fill(data.email);
 
     Logger.info(`Selecting phone country code: ${data.phoneCountryCode}`);
     await this.phoneCountryCodeDropdown.selectOption({ label: data.phoneCountryCode });
-    
+
     Logger.info(`Filling phone number: ${data.phoneNumber}`);
     await this.phoneNumberInput.fill(data.phoneNumber);
 
@@ -90,13 +90,13 @@ class AutomateWebFormPage {
   async verifySuccessMessage() {
     Logger.info('Verifying success message visibility');
     const isVisible = await this.successMessage.isVisible();
-    
+
     if (isVisible) {
       Logger.success('Success message is visible');
     } else {
       Logger.warn('Success message is not visible');
     }
-    
+
     return isVisible;
   }
 }
