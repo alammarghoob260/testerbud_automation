@@ -12,12 +12,16 @@ const test = base.extend({
     const practiceSiteDropdown = page.locator('#practice-sites-dropdown > span');
     const practiceSiteOptions = page.locator('#testerbud-navbar > div > div > div > a');
 
-    // Actions
+    // Dropdown open
     await practiceSiteDropdown.click();
-    await practiceSiteOptions.nth(0).click(); // default first option
 
-    // Pass page to test
-    await use(page);
+    // Helper method to select option by index
+    const selectPracticeSite = async (index = 0) => {
+      await practiceSiteOptions.nth(index).click();
+    };
+
+    // Pass both page + helper to test
+    await use({ page, selectPracticeSite });
   },
 });
 
