@@ -1,3 +1,5 @@
+import { Logger } from '../../utils/Logger.js';
+
 class AutomateWebFormPage {
   constructor(page) {
     this.page = page;
@@ -46,29 +48,56 @@ class AutomateWebFormPage {
     this.successMessage = page.locator(
       '#root > div.py-5.container > div > div > div > div.card-body > div'
     );
+    Logger.debug('AutomateWebFormPage initialized');
   }
 
   async fillForm(data) {
+    Logger.info(`Selecting country: ${data.country}`);
     await this.countryDropdown.selectOption({ label: data.country });
+    
+    Logger.info(`Selecting title: ${data.title}`);
     await this.titleDropdown.selectOption({ label: data.title });
+    
+    Logger.info(`Filling first name: ${data.firstName}`);
     await this.firstNameInput.fill(data.firstName);
+    
+    Logger.info(`Filling last name: ${data.lastName}`);
     await this.lastNameInput.fill(data.lastName);
+    
+    Logger.info(`Filling date of birth: ${data.dob}`);
     await this.dobInput.fill(data.dob);
+    
+    Logger.info(`Filling joining date: ${data.joiningDate}`);
     await this.joiningDateInput.fill(data.joiningDate);
+    
+    Logger.info(`Filling email: ${data.email}`);
     await this.emailInput.fill(data.email);
 
-    // ✅ Fill both phone fields
+    Logger.info(`Selecting phone country code: ${data.phoneCountryCode}`);
     await this.phoneCountryCodeDropdown.selectOption({ label: data.phoneCountryCode });
+    
+    Logger.info(`Filling phone number: ${data.phoneNumber}`);
     await this.phoneNumberInput.fill(data.phoneNumber);
 
-    // ✅ Dynamic radio selection
+    Logger.info(`Selecting communication method: ${data.communication}`);
     await this.communicationRadio(data.communication).check();
 
+    Logger.info('Clicking submit button');
     await this.submitButton.click();
+    Logger.success('Form submitted successfully');
   }
 
   async verifySuccessMessage() {
-    return await this.successMessage.isVisible();
+    Logger.info('Verifying success message visibility');
+    const isVisible = await this.successMessage.isVisible();
+    
+    if (isVisible) {
+      Logger.success('Success message is visible');
+    } else {
+      Logger.warn('Success message is not visible');
+    }
+    
+    return isVisible;
   }
 }
 
