@@ -13,3 +13,11 @@ export const webFormData = {
   phoneNumber: '9876543210',
   communication: 'Phone', // or 'Email'
 };
+
+// utils/details.js
+export const testDetails = {
+  email: 'user@premiumbank.com', 
+  securityCode: 'BANK1234',
+  oldPassword: 'Bank@123',
+  newPassword: 'Bank@12345',
+};

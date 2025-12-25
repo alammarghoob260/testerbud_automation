@@ -41,6 +41,20 @@ class DataValidator {
   }
 
   /**
+   * Validates password with requirements:
+   * - Minimum 8 characters
+   * - At least one uppercase letter
+   * - At least one lowercase letter
+   * - At least one number
+   * - At least one special character
+   */
+  static isValidPassword(password) {
+    if (!password) return false;
+    const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
+    return passwordRegex.test(password);
+  }
+
+  /**
    * Validates entire form data object
    */
   static validateFormData(data) {
@@ -69,7 +83,7 @@ class DataValidator {
   }
 
   /**
-   * Validates credentials
+   * Validates credentials (email + password)
    */
   static validateCredentials(email, password) {
     const errors = [];
@@ -77,8 +91,10 @@ class DataValidator {
     if (!this.isValidEmail(email)) {
       errors.push('Invalid email format');
     }
-    if (!password || password.length < 6) {
-      errors.push('Password must be at least 6 characters');
+    if (!this.isValidPassword(password)) {
+      errors.push(
+        'Password must be at least 8 characters, include uppercase, lowercase, number, and special character'
+      );
     }
 
     return {

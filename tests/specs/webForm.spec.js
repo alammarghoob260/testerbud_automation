@@ -3,9 +3,21 @@ import { test } from '../../src/fixtures/homeFixtures.js';
 import { AutomateWebFormPage } from '../../src/pages/WebFormAutomation/AutomateWebFormPage.js';
 import { webFormData } from '../../src/utils/testData.js';
 import { Logger } from '../../src/utils/Logger.js';
+import { DataValidator } from '../../src/utils/DataValidator.js';
 
 test('Web Form Automation flow with dummy data', async ({ practiceSitePage }) => {
   Logger.info('Starting Web Form Automation Test');
+
+  // ✅ Step 0: Validate form data before automation
+  const validation = DataValidator.validateFormData(webFormData);
+
+  if (!validation.isValid) {
+    Logger.error(`Form data validation failed: ${validation.errors.join(', ')}`);
+    // Fail the test immediately if data is invalid
+    expect(validation.isValid).toBeTruthy();
+    return;
+  }
+  Logger.success('Form data validation passed');
 
   try {
     // Step 1: Select second practice site (Web Form Automation)
