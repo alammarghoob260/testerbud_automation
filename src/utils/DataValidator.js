@@ -43,28 +43,73 @@ class DataValidator {
 
   /**
    * Validates address fields (safe destructuring)
+   * @param {Object} address - Address object with fullName, street, city, state, zip
+   * @returns {Object} { isValid: boolean, errors: Array }
    */
   static isValidAddress(address = {}) {
-    const { fullName, street, city, state, zip } = address;
+    if (!address || typeof address !== 'object') {
+      return { isValid: false, errors: ['Address must be a valid object'] };
+    }
+
+    const { fullName = '', street = '', city = '', state = '', zip = '' } = address;
     const errors = [];
 
-    if (!this.isValidName(fullName)) errors.push('Invalid full name');
-    if (!street || street.trim().length < 3) errors.push('Invalid street');
-    if (!city || city.trim().length < 2) errors.push('Invalid city');
-    if (!state || state.trim().length < 2) errors.push('Invalid state');
-    if (!zip || !/^\d{4,10}$/.test(zip)) errors.push('Invalid zip');
+    // Validate full name
+    if (!fullName || !this.isValidName(fullName)) {
+      errors.push('Invalid full name (min 2 letters, letters/spaces/hyphens/apostrophes only)');
+    }
+
+    // Validate street (at least 3 characters, alphanumeric and spaces)
+    if (!street || street.trim().length < 3 || !/^[a-zA-Z0-9\s,\.\-#]*$/.test(street)) {
+      errors.push('Invalid street (min 3 characters, alphanumeric and spaces allowed)');
+    }
+
+    // Validate city (at least 2 characters)
+    if (!city || city.trim().length < 2 || !/^[a-zA-Z\s\-']*$/.test(city)) {
+      errors.push('Invalid city (min 2 characters, letters only)');
+    }
+
+    // Validate state (at least 2 characters)
+    if (!state || state.trim().length < 2 || !/^[a-zA-Z\s\-']*$/.test(state)) {
+      errors.push('Invalid state (min 2 characters, letters only)');
+    }
+
+    // Validate zip code (4-10 digits)
+    if (!zip || !/^\d{4,10}$/.test(zip.toString())) {
+      errors.push('Invalid zip code (4-10 digits required)');
+    }
 
     return { isValid: errors.length === 0, errors };
   }
 
+  /**
+   * Validates payment details
+   * @param {Object} payment - Payment object with cardNumber, expiry, cvv
+   * @returns {Object} { isValid: boolean, errors: Array }
+   */
   static isValidPayment(payment = {}) {
-    const { cardNumber, expiry, cvv } = payment;
+    if (!payment || typeof payment !== 'object') {
+      return { isValid: false, errors: ['Payment must be a valid object'] };
+    }
+
+    const { cardNumber = '', expiry = '', cvv = '' } = payment;
     const errors = [];
 
-    if (!cardNumber || !/^\d{13,19}$/.test(cardNumber.replace(/\s+/g, '')))
-      errors.push('Invalid card number');
-    if (!expiry || !/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiry)) errors.push('Invalid expiry (MM/YY)');
-    if (!cvv || !/^\d{3,4}$/.test(cvv)) errors.push('Invalid CVV');
+    // Validate card number (13-19 digits, Luhn algorithm would be ideal but this is sufficient)
+    const cardDigitsOnly = cardNumber.toString().replace(/\s+/g, '');
+    if (!cardDigitsOnly || !/^\d{13,19}$/.test(cardDigitsOnly)) {
+      errors.push('Invalid card number (13-19 digits required, no special characters)');
+    }
+
+    // Validate expiry date (MM/YY format)
+    if (!expiry || !/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiry.toString())) {
+      errors.push('Invalid expiry date (MM/YY format required, e.g., 12/25)');
+    }
+
+    // Validate CVV (3-4 digits)
+    if (!cvv || !/^\d{3,4}$/.test(cvv.toString())) {
+      errors.push('Invalid CVV (3-4 digits required)');
+    }
 
     return { isValid: errors.length === 0, errors };
   }

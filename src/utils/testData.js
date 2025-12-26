@@ -45,19 +45,35 @@ export const ecommerceDetails = {
 
   // 📍 Address (fixed for validation)
   address: {
-    fullName: 'Marghoob Alam', // valid name
-    street: '12A Green Park Road', // >=3 chars, no slash
-    city: 'Kolkata', // >=2 chars
-    state: 'West Bengal', // >=2 chars
-    zip: '700001', // 4–10 digits
+    fullName: 'John Smith', // valid name
+    street: '123 Main Street', // 3+ chars
+    city: 'New York', // 2+ chars
+    state: 'NY', // 2+ chars
+    zip: '10001', // 4–10 digits
   },
 
   // 💳 Payment (fixed for validation)
   payment: {
-    cardNumber: '4111111111111111', // valid 16-digit Visa test number
+    cardNumber: '5555555555554444', // valid Mastercard test number
     expiry: '12/25', // MM/YY format
     cvv: '123', // 3-digit CVV
   },
+};
+
+// 📍 Address Data (for validation testing)
+export const addressData = {
+  fullName: 'Marghoob Alam', // valid name (2+ letters)
+  street: '12A Green Park Road', // 3+ chars with numbers, letters, spaces
+  city: 'Kolkata', // 2+ chars, letters only
+  state: 'West Bengal', // 2+ chars, letters only
+  zip: '700001', // 4–10 digits
+};
+
+// 💳 Payment Data (for validation testing)
+export const paymentData = {
+  cardNumber: '4111111111111111', // valid 16-digit Visa test number
+  expiry: '12/25', // MM/YY format
+  cvv: '123', // 3-digit CVV
 };
 
 // 🔧 Helper Generators
@@ -92,14 +108,34 @@ export function generatePayment(overrides = {}) {
 
 // Validate cart items array
 export function validateCartItems(items) {
+  if (!Array.isArray(items)) {
+    return { isValid: false, errors: ['Items must be an array'] };
+  }
+
   const errors = [];
   for (const item of items) {
-    if (!item.name || typeof item.name !== 'string') {
-      errors.push(`Invalid product name`);
+    if (!item.name || typeof item.name !== 'string' || item.name.trim().length === 0) {
+      errors.push('Invalid product name (must be non-empty string)');
     }
     if (!DataValidator.isValidQuantity(item.qty)) {
-      errors.push(`Invalid qty for ${item.name}`);
+      errors.push(`Invalid qty for ${item.name} (must be 1-99)`);
     }
   }
   return { isValid: errors.length === 0, errors };
 }
+
+// Test address with ecommerce data
+export const ecommerceAddress = {
+  fullName: 'John Doe',
+  street: '123 Main Street, Apt 4B',
+  city: 'New York',
+  state: 'NY',
+  zip: '10001',
+};
+
+// Test payment for ecommerce
+export const ecommercePayment = {
+  cardNumber: '5555555555554444', // Valid Mastercard test number
+  expiry: '06/26',
+  cvv: '456',
+};
