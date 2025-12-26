@@ -1,6 +1,7 @@
 // pages/LoginPage.js
 import { Logger } from '../../utils/Logger.js';
 import { DataValidator } from '../../utils/DataValidator.js';
+import { RetryHelper } from '../../utils/RetryHelper.js';
 
 class LoginPage {
   constructor(page) {
@@ -31,22 +32,26 @@ class LoginPage {
     Logger.debug('Credentials validation passed');
 
     Logger.info(`Filling email field: ${email}`);
-    await this.emailInput.fill(email);
+    await RetryHelper.retryFill(this.emailInput, email);
 
     Logger.info('Filling password field');
-    await this.passwordInput.fill(password);
+    await RetryHelper.retryFill(this.passwordInput, password);
 
     // ✅ Optional: Check remember me if visible
-    if (await this.rememberMeCheckbox.isVisible()) {
-      const checked = await this.rememberMeCheckbox.isChecked();
-      if (!checked) {
-        Logger.info('Checking remember me checkbox');
-        await this.rememberMeCheckbox.check();
+    try {
+      if (await this.rememberMeCheckbox.isVisible()) {
+        const checked = await this.rememberMeCheckbox.isChecked();
+        if (!checked) {
+          Logger.info('Checking remember me checkbox');
+          await this.rememberMeCheckbox.check();
+        }
       }
+    } catch (error) {
+      Logger.warn('Remember me checkbox not interactable, skipping');
     }
 
     Logger.info('Clicking sign in button');
-    await this.signInButton.click();
+    await RetryHelper.retryClick(this.signInButton, this.page);
     Logger.success('Login action completed');
   }
 

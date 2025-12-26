@@ -1,5 +1,6 @@
 import { Logger } from '../../utils/Logger.js';
 import { DataValidator } from '../../utils/DataValidator.js';
+import { RetryHelper } from '../../utils/RetryHelper.js';
 
 class AutomateWebFormPage {
   constructor(page) {
@@ -104,37 +105,42 @@ class AutomateWebFormPage {
 
     try {
       Logger.info(`Selecting country: ${data.country}`);
-      await this.countryDropdown.selectOption({ label: data.country });
+      await RetryHelper.retrySelect(this.countryDropdown, { label: data.country });
 
       Logger.info(`Selecting title: ${data.title}`);
-      await this.titleDropdown.selectOption({ label: data.title });
+      await RetryHelper.retrySelect(this.titleDropdown, { label: data.title });
 
       Logger.info(`Filling first name: ${data.firstName}`);
-      await this.firstNameInput.fill(data.firstName);
+      await RetryHelper.retryFill(this.firstNameInput, data.firstName);
 
       Logger.info(`Filling last name: ${data.lastName}`);
-      await this.lastNameInput.fill(data.lastName);
+      await RetryHelper.retryFill(this.lastNameInput, data.lastName);
 
       Logger.info(`Filling date of birth: ${data.dob}`);
-      await this.dobInput.fill(data.dob);
+      await RetryHelper.retryFill(this.dobInput, data.dob);
 
       Logger.info(`Filling joining date: ${data.joiningDate}`);
-      await this.joiningDateInput.fill(data.joiningDate);
+      await RetryHelper.retryFill(this.joiningDateInput, data.joiningDate);
 
       Logger.info(`Filling email: ${data.email}`);
-      await this.emailInput.fill(data.email);
+      await RetryHelper.retryFill(this.emailInput, data.email);
 
       Logger.info(`Selecting phone country code: ${data.phoneCountryCode}`);
-      await this.phoneCountryCodeDropdown.selectOption({ label: data.phoneCountryCode });
+      await RetryHelper.retrySelect(this.phoneCountryCodeDropdown, {
+        label: data.phoneCountryCode
+      });
 
       Logger.info(`Filling phone number: ${data.phoneNumber}`);
-      await this.phoneNumberInput.fill(data.phoneNumber);
+      await RetryHelper.retryFill(this.phoneNumberInput, data.phoneNumber);
 
       Logger.info(`Selecting communication method: ${data.communication}`);
-      await this.communicationRadio(data.communication).check();
+      await RetryHelper.retryElement(
+        this.communicationRadio(data.communication),
+        async (el) => el.check()
+      );
 
       Logger.info('Clicking submit button');
-      await this.submitButton.click();
+      await RetryHelper.retryClick(this.submitButton, this.page);
       Logger.success('Form submitted successfully');
     } catch (error) {
       Logger.error(`Form fill failed: ${error.message}`);
