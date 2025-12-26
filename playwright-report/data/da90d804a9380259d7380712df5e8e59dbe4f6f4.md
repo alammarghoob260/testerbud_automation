@@ -1,0 +1,198 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - heading "TesterBud – The Ultimate Automation Playground" [level=3] [ref=e7]
+      - paragraph [ref=e8]: TesterBud – The Ultimate Playground for Automation Testers! 🚀 Practice XPath, UI automation, and real-world testing challenges with interactive dummy sites.
+      - button "Get Started ➜" [ref=e9] [cursor=pointer]
+    - img "Automation Illustration" [ref=e13]
+  - navigation [ref=e14]:
+    - generic [ref=e15]:
+      - link "TesterBud" [ref=e16] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e18]:
+        - link "Features" [ref=e19] [cursor=pointer]:
+          - /url: /practice-page-selection
+        - button "Practice Sites" [ref=e21] [cursor=pointer]
+        - link "About" [ref=e22] [cursor=pointer]:
+          - /url: /AboutPage
+  - generic [ref=e23]:
+    - heading "Features" [level=2] [ref=e24]
+    - paragraph [ref=e25]: Your free demo website for testing automation workflows, Dummy e-commerce site, Dummy Flight Booking application, Dummy login forms, and UI interactions.
+    - generic [ref=e26]:
+      - link "Variety of Demo Sites Variety of Dummy Sites Explore various dummy sites, including login pages, e-commerce, and flight booking, designed for hands-on automation testing and XPath practice." [ref=e29] [cursor=pointer]:
+        - /url: /practice-page-selection
+        - img "Variety of Demo Sites" [ref=e30]
+        - heading "Variety of Dummy Sites" [level=3] [ref=e31]
+        - paragraph [ref=e32]: Explore various dummy sites, including login pages, e-commerce, and flight booking, designed for hands-on automation testing and XPath practice.
+      - link "Realistic Scenarios Realistic Scenarios Practice automation testing with real-world UI elements, login pages, e-commerce, flight booking, and interactive XPath challenges in a live sandbox." [ref=e35] [cursor=pointer]:
+        - /url: /practice-page-selection
+        - img "Realistic Scenarios" [ref=e36]
+        - heading "Realistic Scenarios" [level=3] [ref=e37]
+        - paragraph [ref=e38]: Practice automation testing with real-world UI elements, login pages, e-commerce, flight booking, and interactive XPath challenges in a live sandbox.
+      - link "Demo APIs Interactive UI Elements Explore a wide range of UI elements, from basic to advanced, to learn, interact, and challenge yourself in finding XPath and automating interactions." [ref=e41] [cursor=pointer]:
+        - /url: /practice-page-selection
+        - img "Demo APIs" [ref=e42]
+        - heading "Interactive UI Elements" [level=3] [ref=e43]
+        - paragraph [ref=e44]: Explore a wide range of UI elements, from basic to advanced, to learn, interact, and challenge yourself in finding XPath and automating interactions.
+      - link "Focused Practice Comprehensive Form Validation Test and automate form interactions with real-time inline error messages, covering input fields, validation rules, and edge cases." [ref=e47] [cursor=pointer]:
+        - /url: /practice-page-selection
+        - img "Focused Practice" [ref=e48]
+        - heading "Comprehensive Form Validation" [level=3] [ref=e49]
+        - paragraph [ref=e50]: Test and automate form interactions with real-time inline error messages, covering input fields, validation rules, and edge cases.
+  - generic [ref=e51]:
+    - heading "Why TesterBud is the Ideal Platform for Automation Testing Practice" [level=2] [ref=e52]
+    - list [ref=e56]:
+      - listitem [ref=e57]:
+        - link "Practice Login Automation" [ref=e58] [cursor=pointer]:
+          - /url: /practice-login-form
+        - text: ": Explore our dummy login websites and hone your skills in automating login forms and submission processes. Ideal for Selenium, Cypress, and more."
+      - listitem [ref=e59]:
+        - text: Get hands-on experience in
+        - link "Web Form Automation Practice" [ref=e60] [cursor=pointer]:
+          - /url: /practice-forms
+        - text: ": Learn to automate filling text fields, selecting dropdown options, handling radio buttons, and submitting various web forms."
+      - listitem [ref=e61]:
+        - text: Master
+        - link "E-commerce Automation Testing" [ref=e62] [cursor=pointer]:
+          - /url: /practice-ecommerece-website
+        - text: ": Practice automating shopping cart functionalities, order placement, and product browsing on our realistic demo e-commerce site."
+      - listitem [ref=e63]:
+        - text: Enhance your skills with our
+        - link "Flight Booking Automation Practice" [ref=e64] [cursor=pointer]:
+          - /url: /flight-booking-scenarios
+        - text: ": Navigate multi-step flight booking forms, select travel options, and verify booking confirmations in a simulated real-world scenario."
+      - listitem [ref=e65]:
+        - text: Develop expertise in
+        - link "UI Element Automation Practice" [ref=e66] [cursor=pointer]:
+          - /url: /practice-different-ui-elements
+        - text: ": Explore and automate interactions with buttons, links, dropdowns, text fields, and other common web elements on our dedicated practice website."
+      - listitem [ref=e67]:
+        - text: Become proficient in
+        - link "XPath for UI Automation Practice" [ref=e68] [cursor=pointer]:
+          - /url: /practice-xpath
+        - text: ": Utilize our dedicated iframe website to master XPath selectors for accurately locating and interacting with web elements in your automation scripts."
+  - contentinfo [ref=e69]:
+    - generic [ref=e71]:
+      - heading "About TesterBud" [level=2] [ref=e72]
+      - paragraph [ref=e73]: Your premier destination for mastering automation and testing skills.
+      - paragraph [ref=e74]: Welcome to TesterBud, your premier destination for mastering automation and testing skills. In today's fast-paced tech environment, proficiency in automation testing is not just an advantage—it's a necessity. We understand the challenges faced by aspiring QA professionals and have designed TesterBud to bridge the gap between theoretical knowledge and practical application.
+      - paragraph [ref=e75]:
+        - text: Our platform offers a comprehensive suite of resources, including a robust
+        - link "demo website for automation testing" [ref=e76] [cursor=pointer]:
+          - /url: /
+        - text: ", enabling you to practice in real-world scenarios without the need for complex setups. Whether you're aiming to enhance your Selenium skills with our"
+        - link "demo website for selenium testing" [ref=e77] [cursor=pointer]:
+          - /url: /
+        - text: or looking to master performance testing with our demo website for JMeter testing, TesterBud provides the tools you need.
+      - paragraph [ref=e78]:
+        - text: For those new to the field, our
+        - link "demo website for manual testing" [ref=e79] [cursor=pointer]:
+          - /url: /
+        - text: provides a gentle introduction to fundamental testing concepts. Advanced users can leverage our
+        - link "demo website for Cypress testing" [ref=e80] [cursor=pointer]:
+          - /url: /
+        - text: to explore cutting-edge automation frameworks. We believe in democratizing access to quality learning resources, which is why we offer a
+        - link "free demo website for testing" [ref=e81] [cursor=pointer]:
+          - /url: /
+        - text: ", allowing you to explore our platform without any financial commitment."
+      - paragraph [ref=e82]:
+        - text: Our
+        - link "dummy website for testing" [ref=e83] [cursor=pointer]:
+          - /url: /
+        - text: is designed to simulate various real-world scenarios, from simple login forms on our
+        - link "dummy website for login testing" [ref=e84] [cursor=pointer]:
+          - /url: /practice-login-form
+        - text: to complex e-commerce flows on our
+        - link "demo e-commerce website for testing" [ref=e85] [cursor=pointer]:
+          - /url: /practice-ecommerece-website
+        - text: . You can use our
+        - link "dummy website for automation testing" [ref=e86] [cursor=pointer]:
+          - /url: /
+        - text: to practice your skills in a safe and controlled environment.
+      - paragraph [ref=e87]:
+        - text: We also provide
+        - link "sample websites for automation testing" [ref=e88] [cursor=pointer]:
+          - /url: /
+        - text: ", giving you a clear understanding of how to approach different testing challenges. Our"
+        - link "sample login website for testing" [ref=e89] [cursor=pointer]:
+          - /url: /practice-login-form
+        - text: is perfect for honing your skills in handling authentication processes, while our
+        - link "sample eCommerce website for automation testing" [ref=e90] [cursor=pointer]:
+          - /url: /practice-ecommerece-website
+        - text: allows you to practice automating complex user flows.
+      - paragraph [ref=e91]:
+        - text: If you're looking for a
+        - link "demo flight booking website for automation testing" [ref=e92] [cursor=pointer]:
+          - /url: /flight-booking-scenarios
+        - text: ", you'll find our"
+        - link "flight booking website for testing" [ref=e93] [cursor=pointer]:
+          - /url: /flight-booking-scenarios
+        - text: invaluable. We also offer an
+        - link "flight booking demo website for testing" [ref=e94] [cursor=pointer]:
+          - /url: /flight-booking-scenarios
+        - text: ", designed to provide realistic scenarios for"
+        - link "automation testing for flight booking websites" [ref=e95] [cursor=pointer]:
+          - /url: /flight-booking-scenarios
+        - text: .
+      - paragraph [ref=e96]:
+        - text: If you're looking for a
+        - link "demo shopping website for automation testing" [ref=e97] [cursor=pointer]:
+          - /url: /practice-ecommerece-website
+        - text: ", you'll find our"
+        - link "e-commerce website for testing" [ref=e98] [cursor=pointer]:
+          - /url: /practice-ecommerece-website
+        - text: invaluable. We also offer an
+        - link "e-commerce demo website for testing" [ref=e99] [cursor=pointer]:
+          - /url: /practice-ecommerece-website
+        - text: ", designed to provide realistic scenarios for"
+        - link "automation testing for eCommerce websites" [ref=e100] [cursor=pointer]:
+          - /url: /practice-ecommerece-website
+        - text: .
+      - paragraph [ref=e101]:
+        - text: TesterBud is not just a platform; it's a community. Our
+        - link "website for automation testing practice" [ref=e102] [cursor=pointer]:
+          - /url: /
+        - text: is designed to foster collaboration and knowledge sharing. We believe that the
+        - link "best website for automation testing" [ref=e103] [cursor=pointer]:
+          - /url: /
+        - text: should be accessible to everyone, which is why we offer a
+        - link "free website for automation testing" [ref=e104] [cursor=pointer]:
+          - /url: /
+        - text: .
+      - paragraph [ref=e105]:
+        - text: Our
+        - link "simple website for automation testing" [ref=e106] [cursor=pointer]:
+          - /url: /
+        - text: allows you to focus on the core concepts without getting bogged down by unnecessary complexity. If you're specifically interested in Selenium, our
+        - link "practice website for Selenium automation testing" [ref=e107] [cursor=pointer]:
+          - /url: /
+        - text: is tailored to meet your needs.
+      - paragraph [ref=e108]:
+        - text: We understand the importance of realistic scenarios, which is why we provide a
+        - link "fake login website for testing" [ref=e109] [cursor=pointer]:
+          - /url: /practice-login-form
+        - text: . Our
+        - link "login website for testing" [ref=e110] [cursor=pointer]:
+          - /url: /practice-login-form
+        - text: is designed to help you master the intricacies of authentication testing.
+      - paragraph [ref=e111]:
+        - text: Whether you're a beginner or an experienced professional, TesterBud is your go-to
+        - link "website for testing" [ref=e112] [cursor=pointer]:
+          - /url: /
+        - text: . Our resources are designed to help you excel in your career as a QA professional. We are committed to providing you with the tools and knowledge you need to succeed in the dynamic field of software testing.
+      - paragraph [ref=e113]:
+        - text: TesterBud is more than just a
+        - link "website for testing Selenium" [ref=e114] [cursor=pointer]:
+          - /url: /
+        - text: ; it's a comprehensive platform for all your testing needs. We are dedicated to providing the highest quality resources to help you achieve your career goals.
+    - generic [ref=e115]:
+      - paragraph [ref=e116]:
+        - text: Ready to start automating on a
+        - link "website for testing" [ref=e117] [cursor=pointer]:
+          - /url: /
+        - text: "? Explore, practice, and master!"
+      - paragraph [ref=e118]: © 2025 TesterBud | Built for learners by learners 🚀
+```

@@ -2,6 +2,7 @@
 import { Logger } from '../../utils/Logger.js';
 import { DataValidator } from '../../utils/DataValidator.js';
 import { RetryHelper } from '../../utils/RetryHelper.js';
+import { expect } from '@playwright/test';
 
 class LoginPage {
   constructor(page) {
@@ -32,9 +33,13 @@ class LoginPage {
     Logger.debug('Credentials validation passed');
 
     Logger.info(`Filling email field: ${email}`);
+    await this.emailInput.waitFor({ state: 'visible', timeout: 10000 });
+    expect(await this.emailInput.isVisible()).toBeTruthy();
     await RetryHelper.retryFill(this.emailInput, email);
 
     Logger.info('Filling password field');
+    await this.passwordInput.waitFor({ state: 'visible', timeout: 10000 });
+    expect(await this.passwordInput.isVisible()).toBeTruthy();
     await RetryHelper.retryFill(this.passwordInput, password);
 
     // ✅ Optional: Check remember me if visible
@@ -51,6 +56,9 @@ class LoginPage {
     }
 
     Logger.info('Clicking sign in button');
+    await this.signInButton.waitFor({ state: 'visible', timeout: 10000 });
+    expect(await this.signInButton.isVisible()).toBeTruthy();
+    expect(await this.signInButton.isEnabled()).toBeTruthy();
     await RetryHelper.retryClick(this.signInButton, this.page);
     Logger.success('Login action completed');
   }
@@ -58,13 +66,16 @@ class LoginPage {
   async verifyWelcomeMessage() {
     Logger.info('Verifying welcome message visibility');
     try {
-      await this.welcomeMessage.waitFor({ state: 'visible', timeout: 5000 });
+      await this.welcomeMessage.waitFor({ state: 'visible', timeout: 10000 });
+      expect(await this.welcomeMessage.isVisible()).toBeTruthy();
       const messageText = await this.welcomeMessage.textContent();
+      expect(messageText).toBeTruthy();
+      expect(messageText?.trim().length).toBeGreaterThan(0);
       Logger.success(`Welcome message is visible: "${messageText?.trim()}"`);
       return true;
     } catch (error) {
-      Logger.warn(`Welcome message not visible: ${error.message}`);
-      return false;
+      Logger.error(`Welcome message not visible: ${error.message}`);
+      throw error;
     }
   }
 }
