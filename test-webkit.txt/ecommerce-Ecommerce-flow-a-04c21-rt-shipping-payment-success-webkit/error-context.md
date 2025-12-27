@@ -1,0 +1,70 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - 'heading "TesterBud: Dummy E-commerce Application" [level=1] [ref=e6]'
+      - paragraph [ref=e7]: Practice automating shopping cart functionalities, order placement, and product browsing on a realistic demo e-commerce site. 🚀
+    - img "Automation Illustration" [ref=e11]
+  - navigation [ref=e12]:
+    - generic [ref=e13]:
+      - link "TesterBud" [ref=e14]:
+        - /url: /
+      - generic [ref=e16]:
+        - link "Features" [ref=e17]:
+          - /url: /practice-page-selection
+        - button "Practice Sites" [ref=e19] [cursor=pointer]
+        - link "About" [ref=e20]:
+          - /url: /AboutPage
+  - generic [ref=e21]:
+    - navigation [ref=e22]:
+      - generic [ref=e23]:
+        - 'link "TesterBud: Premium Ecommerce" [ref=e24]':
+          - /url: /
+        - searchbox "Search" [ref=e28]: Monitor 4K
+        - button "3" [ref=e30] [cursor=pointer]:
+          - img [ref=e31]
+          - generic [ref=e33]: "3"
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - heading "Search Results for \"Monitor 4K\"" [level=2] [ref=e36]
+        - generic [ref=e39]:
+          - img "Monitor 4K" [ref=e40]
+          - generic [ref=e41]:
+            - generic [ref=e42]: Monitor 4K
+            - generic [ref=e43]: "Price: $350"
+            - generic [ref=e44]:
+              - generic [ref=e45]:
+                - generic [ref=e46]: "Qty:"
+                - spinbutton "Qty:" [ref=e47]: "1"
+              - button "Add to Cart" [ref=e48] [cursor=pointer]
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "Shipping Address" [level=2] [ref=e54]
+          - button [ref=e55] [cursor=pointer]
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: "Full Name:"
+            - textbox "Full Name:" [ref=e59]: John Smith
+          - generic [ref=e60]:
+            - generic [ref=e61]: "Street Address:"
+            - textbox "Street Address:" [ref=e62]
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - generic [ref=e65]: "City:"
+              - textbox "City:" [ref=e66]
+            - generic [ref=e67]:
+              - generic [ref=e68]: "State:"
+              - textbox "State:" [ref=e69]
+            - generic [ref=e70]:
+              - generic [ref=e71]: "ZIP Code:"
+              - textbox "ZIP Code:" [ref=e72]: "10001"
+          - button "Save Address & Continue to Payment" [ref=e73] [cursor=pointer]
+      - link "Back To Home Page ➡️" [ref=e75] [cursor=pointer]:
+        - /url: /
+  - contentinfo [ref=e76]:
+    - generic [ref=e77]:
+      - paragraph [ref=e78]: Ready to start automating? Explore, practice, and master!
+      - text: © 2025 TesterBud | Built for learners by learners 🚀
+```

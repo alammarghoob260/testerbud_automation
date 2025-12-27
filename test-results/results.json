@@ -129,19 +129,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 29,
+                      "duration": 26,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.536Z: Running form data validation test\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.157Z: Running form data validation test\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.539Z: Form data validation passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.160Z: Form data validation passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.487Z",
+                      "startTime": "2025-12-27T18:29:56.112Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -170,19 +170,19 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 37,
+                      "duration": 20,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.649Z: Running credentials validation test\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.111Z: Running credentials validation test\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.651Z: Credentials validation passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.113Z: Credentials validation passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.582Z",
+                      "startTime": "2025-12-27T18:29:56.077Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -211,19 +211,19 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 38,
+                      "duration": 18,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.647Z: Running address validation test\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.081Z: Running address validation test\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.649Z: Address validation passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.083Z: Address validation passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.581Z",
+                      "startTime": "2025-12-27T18:29:56.053Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -252,19 +252,19 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 35,
+                      "duration": 18,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.573Z: Running payment validation test\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.066Z: Running payment validation test\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.578Z: Payment validation passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.068Z: Payment validation passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.528Z",
+                      "startTime": "2025-12-27T18:29:56.040Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -293,34 +293,34 @@
                       "workerIndex": 4,
                       "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 38,
+                      "duration": 24,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.598Z: Running individual field validation tests\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.117Z: Running individual field validation tests\n"
                         },
                         {
-                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:33.607Z: Email validation passed\n"
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:29:56.125Z: Email validation passed\n"
                         },
                         {
-                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:33.610Z: First name validation passed\n"
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:29:56.127Z: First name validation passed\n"
                         },
                         {
-                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:33.613Z: Last name validation passed\n"
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:29:56.129Z: Last name validation passed\n"
                         },
                         {
-                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:33.617Z: DOB validation passed\n"
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:29:56.130Z: DOB validation passed\n"
                         },
                         {
-                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:33.621Z: Phone number validation passed\n"
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:29:56.132Z: Phone number validation passed\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.622Z: All field validations passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.132Z: All field validations passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.544Z",
+                      "startTime": "2025-12-27T18:29:56.087Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -349,19 +349,19 @@
                       "workerIndex": 5,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 45,
+                      "duration": 29,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.692Z: Testing email validation\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.145Z: Testing email validation\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.716Z: Email validation tests passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.165Z: Email validation tests passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.628Z",
+                      "startTime": "2025-12-27T18:29:56.108Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -387,22 +387,22 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 11,
+                      "duration": 8,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.612Z: Testing phone number validation\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.111Z: Testing phone number validation\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.617Z: Phone number validation tests passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.115Z: Phone number validation tests passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.594Z",
+                      "startTime": "2025-12-27T18:29:56.097Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -428,22 +428,22 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 17,
+                      "duration": 11,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.653Z: Testing date validation\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.131Z: Testing date validation\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.663Z: Date validation tests passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.138Z: Date validation tests passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.634Z",
+                      "startTime": "2025-12-27T18:29:56.117Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -469,22 +469,22 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 18,
+                      "duration": 15,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.667Z: Testing name validation\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.149Z: Testing name validation\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.679Z: Name validation tests passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.160Z: Name validation tests passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.648Z",
+                      "startTime": "2025-12-27T18:29:56.136Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -510,22 +510,22 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 16,
+                      "duration": 13,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.696Z: Testing password validation\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.167Z: Testing password validation\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.705Z: Password validation tests passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.175Z: Password validation tests passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.670Z",
+                      "startTime": "2025-12-27T18:29:56.148Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -551,22 +551,22 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 23,
+                      "duration": 10,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:33.716Z: Testing quantity validation\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.174Z: Testing quantity validation\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:33.727Z: Quantity validation tests passed\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:29:56.180Z: Quantity validation tests passed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-27T09:44:33.696Z",
+                      "startTime": "2025-12-27T18:29:56.160Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -602,76 +602,76 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
                   "status": "passed",
-                  "duration": 13928,
+                  "duration": 20619,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.405Z: Setting up practiceSitePage fixture\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.754Z: Setting up practiceSitePage fixture\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.405Z: Navigating to https://testerbud.com/\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.754Z: Navigating to https://testerbud.com/\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:41.846Z: Homepage loaded successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:08.135Z: Homepage loaded successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.847Z: Starting Ecommerce Flow Test\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.137Z: Starting Ecommerce Flow Test\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:41.848Z: Data validation passed\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:08.138Z: Data validation passed\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.849Z: Selecting practice site at index 4\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.138Z: Selecting practice site at index 4\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.849Z: Opening practice sites dropdown\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.138Z: Opening practice sites dropdown\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:44.551Z: Successfully navigated to practice site 4\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:13.858Z: Successfully navigated to practice site 4\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:44.680Z: Adding product: Laptop Pro x2\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:13.979Z: Adding product: Laptop Pro x2\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:44.823Z: Adding product: Wireless Mouse x3\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:14.094Z: Adding product: Wireless Mouse x3\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:44.976Z: Searching for product: Monitor 4K\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:14.211Z: Searching for product: Monitor 4K\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:45.013Z: Adding searched product: Monitor 4K x1\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:14.231Z: Adding searched product: Monitor 4K x1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:45.216Z: Opening cart modal\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:14.358Z: Opening cart modal\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:45.831Z: Removing product from cart: Wireless Mouse\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:14.835Z: Removing product from cart: Wireless Mouse\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:46.149Z: Proceeding to buy\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:15.222Z: Proceeding to buy\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:46.245Z: Filling shipping address\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:15.325Z: Filling shipping address\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:46.576Z: Filling payment details\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:15.731Z: Filling payment details\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:47.271Z: Verifying order success\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:16.340Z: Verifying order success\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:47.720Z: Ecommerce flow passed successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:16.693Z: Ecommerce flow passed successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:47.722Z: Fixture teardown completed\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:16.695Z: Fixture teardown completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-27T09:44:33.737Z",
+                  "startTime": "2025-12-27T18:29:56.186Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -705,46 +705,46 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 12999,
+                  "duration": 18414,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.414Z: Setting up practiceSitePage fixture\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.726Z: Setting up practiceSitePage fixture\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.415Z: Navigating to https://testerbud.com/\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.726Z: Navigating to https://testerbud.com/\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:42.981Z: Homepage loaded successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:05.829Z: Homepage loaded successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:42.982Z: Starting Forgot Password Test\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.830Z: Starting Forgot Password Test\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:42.982Z: Forgot Password data validation passed\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:05.831Z: Forgot Password data validation passed\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:42.982Z: Selecting practice site at index 2\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.831Z: Selecting practice site at index 2\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:42.982Z: Opening practice sites dropdown\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.831Z: Opening practice sites dropdown\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:45.670Z: Successfully navigated to practice site 2\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:11.741Z: Successfully navigated to practice site 2\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:46.631Z: Forgot Password flow passed successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:14.567Z: Forgot Password flow passed successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:46.632Z: Fixture teardown completed\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:14.568Z: Fixture teardown completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-27T09:44:33.734Z",
+                  "startTime": "2025-12-27T18:29:56.189Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -778,94 +778,94 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 13084,
+                  "duration": 13127,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.473Z: Setting up practiceSitePage fixture\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.667Z: Setting up practiceSitePage fixture\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.473Z: Navigating to https://testerbud.com/\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.667Z: Navigating to https://testerbud.com/\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:42.378Z: Homepage loaded successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:02.868Z: Homepage loaded successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:42.380Z: Starting Login Test\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:02.869Z: Starting Login Test\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:42.380Z: Credentials validation passed\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:02.870Z: Credentials validation passed\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:42.381Z: Selecting first practice site\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:02.870Z: Selecting first practice site\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:42.381Z: Selecting practice site at index 0\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:02.870Z: Selecting practice site at index 0\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:42.381Z: Opening practice sites dropdown\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:02.870Z: Opening practice sites dropdown\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:44.775Z: Successfully navigated to practice site 0\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:07.617Z: Successfully navigated to practice site 0\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:44.775Z: Attempting login with email: user@premiumbank.com\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:07.617Z: Attempting login with email: user@premiumbank.com\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:44.776Z: LoginPage initialized\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:07.618Z: LoginPage initialized\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:44.777Z: Filling email field: user@premiumbank.com\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:07.619Z: Filling email field: user@premiumbank.com\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:44.887Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:07.699Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:44.977Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:07.751Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:44.977Z: Filling password field\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:07.751Z: Filling password field\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:44.986Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:07.756Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:45.060Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:07.800Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:45.060Z: Clicking sign in button\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:07.800Z: Clicking sign in button\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:45.083Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:07.815Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:46.668Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:09.265Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:46.668Z: Login action completed\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:09.265Z: Login action completed\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:46.668Z: Verifying welcome message\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:09.265Z: Verifying welcome message\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:46.668Z: Verifying welcome message visibility\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:09.265Z: Verifying welcome message visibility\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:46.695Z: Welcome message is visible: \"Login Successful! Welcome to Premium Banking.\"\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:09.294Z: Welcome message is visible: \"Login Successful! Welcome to Premium Banking.\"\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:46.698Z: Login test passed successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:09.296Z: Login test passed successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:46.701Z: Fixture teardown completed\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:09.297Z: Fixture teardown completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-27T09:44:33.770Z",
+                  "startTime": "2025-12-27T18:29:56.217Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -899,55 +899,55 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 4,
-                  "parallelIndex": 4,
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
                   "status": "passed",
-                  "duration": 13610,
+                  "duration": 15701,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.455Z: Setting up practiceSitePage fixture\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.731Z: Setting up practiceSitePage fixture\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.455Z: Navigating to https://testerbud.com/\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.732Z: Navigating to https://testerbud.com/\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:41.701Z: Homepage loaded successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:08.593Z: Homepage loaded successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.702Z: Starting Registration Test\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.594Z: Starting Registration Test\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:41.702Z: Registration data validation passed\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:08.595Z: Registration data validation passed\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.702Z: Selecting Registration practice site\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.595Z: Selecting Registration practice site\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.702Z: Selecting practice site at index 3\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.595Z: Selecting practice site at index 3\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.702Z: Opening practice sites dropdown\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.596Z: Opening practice sites dropdown\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:45.666Z: Successfully navigated to practice site 3\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:10.344Z: Successfully navigated to practice site 3\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:45.667Z: Filling registration form\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:10.345Z: Filling registration form\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:47.363Z: Verifying registration success message\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:11.915Z: Verifying registration success message\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:47.376Z: Registration test passed successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:11.926Z: Registration test passed successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:47.377Z: Fixture teardown completed\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:11.927Z: Fixture teardown completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-27T09:44:33.772Z",
+                  "startTime": "2025-12-27T18:29:56.211Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -981,169 +981,169 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 11795,
+                  "duration": 11918,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.496Z: Setting up practiceSitePage fixture\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.662Z: Setting up practiceSitePage fixture\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:34.497Z: Navigating to https://testerbud.com/\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:29:56.663Z: Navigating to https://testerbud.com/\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:41.213Z: Homepage loaded successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:02.063Z: Homepage loaded successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.214Z: Starting Web Form Automation Test\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:02.064Z: Starting Web Form Automation Test\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:41.214Z: Form data validation passed\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:02.065Z: Form data validation passed\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.214Z: Selecting second practice site (Web Form Automation)\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:02.065Z: Selecting second practice site (Web Form Automation)\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.215Z: Selecting practice site at index 1\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:02.065Z: Selecting practice site at index 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:41.215Z: Opening practice sites dropdown\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:02.065Z: Opening practice sites dropdown\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:43.418Z: Successfully navigated to practice site 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:05.162Z: Successfully navigated to practice site 1\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:43.419Z: AutomateWebFormPage initialized\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:05.164Z: AutomateWebFormPage initialized\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:43.419Z: Filling form with test data\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.164Z: Filling form with test data\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:43.420Z: Form data validation passed\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:05.164Z: Form data validation passed\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:43.420Z: Selecting country: India\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.165Z: Selecting country: India\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:43.519Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:05.253Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:43.564Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:05.293Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:43.564Z: Selecting title: Mr.\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.293Z: Selecting title: Mr.\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:43.586Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:05.309Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:43.625Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:05.351Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:43.625Z: Filling first name: Marghoob\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.351Z: Filling first name: Marghoob\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:43.639Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:05.363Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:43.707Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:05.512Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:43.707Z: Filling last name: Alam\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.512Z: Filling last name: Alam\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:43.718Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:05.528Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:43.768Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:05.593Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:43.768Z: Filling date of birth: 1995-08-15\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.594Z: Filling date of birth: 1995-08-15\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:43.779Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:05.608Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:43.895Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:05.813Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:43.895Z: Filling joining date: 01/01/2024\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.814Z: Filling joining date: 01/01/2024\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:43.902Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:05.826Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:43.966Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:05.928Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:43.966Z: Filling email: marghoob@example.com\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:05.928Z: Filling email: marghoob@example.com\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:43.972Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:05.939Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:44.020Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:06.036Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:44.020Z: Selecting phone country code: +91\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:06.037Z: Selecting phone country code: +91\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:44.027Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:06.043Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:44.057Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:06.076Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:44.057Z: Filling phone number: 9876543210\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:06.076Z: Filling phone number: 9876543210\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:44.063Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:06.085Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:44.107Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:06.137Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:44.108Z: Selecting communication method: Phone\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:06.137Z: Selecting communication method: Phone\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:44.113Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:06.146Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:45.094Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:07.124Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:45.095Z: Clicking submit button\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:07.124Z: Clicking submit button\n"
                     },
                     {
-                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T09:44:45.127Z: Attempt 1/3: Executing operation\n"
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-27T18:30:07.147Z: Attempt 1/3: Executing operation\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:45.601Z: ✓ Operation succeeded on attempt 1\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:08.140Z: ✓ Operation succeeded on attempt 1\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:45.601Z: Form submitted successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:08.141Z: Form submitted successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:45.601Z: Verifying success message\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.141Z: Verifying success message\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:45.601Z: Verifying success message visibility\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.141Z: Verifying success message visibility\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:45.618Z: Success message is visible: \"✕Details Successfully Added!Thank you for practicing form automation.We do not store any data. Please avoid entering personal information. Use only dummy data for practicing automation scripts. 😊Go Back to Form\"\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:08.158Z: Success message is visible: \"✕Details Successfully Added!Thank you for practicing form automation.We do not store any data. Please avoid entering personal information. Use only dummy data for practicing automation scripts. 😊Go Back to Form\"\n"
                     },
                     {
-                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T09:44:45.620Z: Web Form test passed successfully\n"
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-27T18:30:08.160Z: Web Form test passed successfully\n"
                     },
                     {
-                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T09:44:45.621Z: Fixture teardown completed\n"
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-27T18:30:08.161Z: Fixture teardown completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-27T09:44:33.803Z",
+                  "startTime": "2025-12-27T18:29:56.219Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1161,8 +1161,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-27T09:44:31.572Z",
-    "duration": 16420.536,
+    "startTime": "2025-12-27T18:29:54.516Z",
+    "duration": 22596.680999999997,
     "expected": 16,
     "skipped": 0,
     "unexpected": 0,
