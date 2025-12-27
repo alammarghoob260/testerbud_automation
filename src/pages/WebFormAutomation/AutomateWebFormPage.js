@@ -1,3 +1,4 @@
+// pages/WebFormAutomation/AutomateWebFormPage.js
 import { Logger } from '../../utils/Logger.js';
 import { DataValidator } from '../../utils/DataValidator.js';
 import { RetryHelper } from '../../utils/RetryHelper.js';
@@ -7,13 +8,8 @@ class AutomateWebFormPage {
   constructor(page) {
     this.page = page;
 
-    // ✅ Improved selectors using data-testid / role-based selectors (Playwright best practice)
-    // Fallback to CSS selectors if specific IDs not available
-    this.countryDropdown = page
-      .locator('select[name="country"]')
-      .or(
-        page.locator('#root > div.py-5.container > div > div > form > div:nth-child(1) > select')
-      );
+    // ✅ Country dropdown (unique locator)
+    this.countryDropdown = page.locator('select.form-select').first();
 
     this.titleDropdown = page
       .locator('select[name="title"]')
@@ -53,7 +49,6 @@ class AutomateWebFormPage {
       .locator('input[name="email"]')
       .or(page.locator('#root > div.py-5.container > div > div > form > div:nth-child(6) > input'));
 
-    // ✅ Phone fields with improved selectors
     this.phoneCountryCodeDropdown = page
       .locator('select[name="phoneCountryCode"]')
       .or(
@@ -70,7 +65,6 @@ class AutomateWebFormPage {
         )
       );
 
-    // ✅ Communication radio using improved selector with fallback
     this.communicationRadio = (method) => {
       const index = method === 'Email' ? 1 : 2;
       return this.page.locator(
@@ -78,7 +72,6 @@ class AutomateWebFormPage {
       );
     };
 
-    // ✅ Submit button using role selector
     this.submitButton = page
       .getByRole('button', { name: /submit|save/i })
       .or(
@@ -87,14 +80,12 @@ class AutomateWebFormPage {
         )
       );
 
-    // ✅ Success message with flexible selector
     this.successMessage = page.locator('.card-body > div, .alert, [data-testid="success"]').first();
 
     Logger.debug('AutomateWebFormPage initialized');
   }
 
   async fillForm(data) {
-    // ✅ Validate form data before filling
     const validation = DataValidator.validateFormData(data);
     if (!validation.isValid) {
       Logger.error(`Form data validation failed: ${validation.errors.join(', ')}`);
@@ -104,62 +95,51 @@ class AutomateWebFormPage {
 
     try {
       Logger.info(`Selecting country: ${data.country}`);
-      await this.countryDropdown.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.countryDropdown.isVisible()).toBeTruthy();
+      await expect(this.countryDropdown).toBeVisible({ timeout: 10000 });
       await RetryHelper.retrySelect(this.countryDropdown, { label: data.country });
 
       Logger.info(`Selecting title: ${data.title}`);
-      await this.titleDropdown.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.titleDropdown.isVisible()).toBeTruthy();
+      await expect(this.titleDropdown).toBeVisible({ timeout: 10000 });
       await RetryHelper.retrySelect(this.titleDropdown, { label: data.title });
 
       Logger.info(`Filling first name: ${data.firstName}`);
-      await this.firstNameInput.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.firstNameInput.isVisible()).toBeTruthy();
+      await expect(this.firstNameInput).toBeVisible({ timeout: 10000 });
       await RetryHelper.retryFill(this.firstNameInput, data.firstName);
 
       Logger.info(`Filling last name: ${data.lastName}`);
-      await this.lastNameInput.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.lastNameInput.isVisible()).toBeTruthy();
+      await expect(this.lastNameInput).toBeVisible({ timeout: 10000 });
       await RetryHelper.retryFill(this.lastNameInput, data.lastName);
 
       Logger.info(`Filling date of birth: ${data.dob}`);
-      await this.dobInput.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.dobInput.isVisible()).toBeTruthy();
+      await expect(this.dobInput).toBeVisible({ timeout: 10000 });
       await RetryHelper.retryFill(this.dobInput, data.dob);
 
       Logger.info(`Filling joining date: ${data.joiningDate}`);
-      await this.joiningDateInput.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.joiningDateInput.isVisible()).toBeTruthy();
+      await expect(this.joiningDateInput).toBeVisible({ timeout: 10000 });
       await RetryHelper.retryFill(this.joiningDateInput, data.joiningDate);
 
       Logger.info(`Filling email: ${data.email}`);
-      await this.emailInput.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.emailInput.isVisible()).toBeTruthy();
+      await expect(this.emailInput).toBeVisible({ timeout: 10000 });
       await RetryHelper.retryFill(this.emailInput, data.email);
 
       Logger.info(`Selecting phone country code: ${data.phoneCountryCode}`);
-      await this.phoneCountryCodeDropdown.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.phoneCountryCodeDropdown.isVisible()).toBeTruthy();
+      await expect(this.phoneCountryCodeDropdown).toBeVisible({ timeout: 10000 });
       await RetryHelper.retrySelect(this.phoneCountryCodeDropdown, {
         label: data.phoneCountryCode,
       });
 
       Logger.info(`Filling phone number: ${data.phoneNumber}`);
-      await this.phoneNumberInput.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.phoneNumberInput.isVisible()).toBeTruthy();
+      await expect(this.phoneNumberInput).toBeVisible({ timeout: 10000 });
       await RetryHelper.retryFill(this.phoneNumberInput, data.phoneNumber);
 
       Logger.info(`Selecting communication method: ${data.communication}`);
       const radioElement = this.communicationRadio(data.communication);
-      await radioElement.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await radioElement.isVisible()).toBeTruthy();
+      await expect(radioElement).toBeVisible({ timeout: 10000 });
       await RetryHelper.retryElement(radioElement, async (el) => el.check());
 
       Logger.info('Clicking submit button');
-      await this.submitButton.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.submitButton.isVisible()).toBeTruthy();
-      expect(await this.submitButton.isEnabled()).toBeTruthy();
+      await expect(this.submitButton).toBeVisible({ timeout: 10000 });
+      await expect(this.submitButton).toBeEnabled();
       await RetryHelper.retryClick(this.submitButton, this.page);
       Logger.success('Form submitted successfully');
     } catch (error) {
@@ -171,8 +151,7 @@ class AutomateWebFormPage {
   async verifySuccessMessage() {
     Logger.info('Verifying success message visibility');
     try {
-      await this.successMessage.waitFor({ state: 'visible', timeout: 10000 });
-      expect(await this.successMessage.isVisible()).toBeTruthy();
+      await expect(this.successMessage).toBeVisible({ timeout: 10000 });
       const messageText = await this.successMessage.textContent();
       expect(messageText).toBeTruthy();
       expect(messageText?.trim().length).toBeGreaterThan(0);

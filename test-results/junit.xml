@@ -1,0 +1,241 @@
+<testsuites id="" name="" tests="16" failures="0" skipped="0" errors="0" time="16.420536">
+<testsuite name="dataValidation.spec.js" timestamp="2025-12-27T09:44:31.642Z" hostname="chromium" tests="11" failures="0" skipped="0" time="0.307" errors="0">
+<testcase name="Data Validation Tests › validate form test data" classname="dataValidation.spec.js" time="0.029">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.536Z: Running form data validation test
+[32m[SUCCESS][0m 2025-12-27T09:44:33.539Z: Form data validation passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate login credentials" classname="dataValidation.spec.js" time="0.037">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.649Z: Running credentials validation test
+[32m[SUCCESS][0m 2025-12-27T09:44:33.651Z: Credentials validation passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate address fields" classname="dataValidation.spec.js" time="0.038">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.647Z: Running address validation test
+[32m[SUCCESS][0m 2025-12-27T09:44:33.649Z: Address validation passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate payment details" classname="dataValidation.spec.js" time="0.035">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.573Z: Running payment validation test
+[32m[SUCCESS][0m 2025-12-27T09:44:33.578Z: Payment validation passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate individual form fields" classname="dataValidation.spec.js" time="0.038">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.598Z: Running individual field validation tests
+[35m[DEBUG][0m 2025-12-27T09:44:33.607Z: Email validation passed
+[35m[DEBUG][0m 2025-12-27T09:44:33.610Z: First name validation passed
+[35m[DEBUG][0m 2025-12-27T09:44:33.613Z: Last name validation passed
+[35m[DEBUG][0m 2025-12-27T09:44:33.617Z: DOB validation passed
+[35m[DEBUG][0m 2025-12-27T09:44:33.621Z: Phone number validation passed
+[32m[SUCCESS][0m 2025-12-27T09:44:33.622Z: All field validations passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate email format" classname="dataValidation.spec.js" time="0.045">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.692Z: Testing email validation
+[32m[SUCCESS][0m 2025-12-27T09:44:33.716Z: Email validation tests passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate phone number format" classname="dataValidation.spec.js" time="0.011">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.612Z: Testing phone number validation
+[32m[SUCCESS][0m 2025-12-27T09:44:33.617Z: Phone number validation tests passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate date format" classname="dataValidation.spec.js" time="0.017">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.653Z: Testing date validation
+[32m[SUCCESS][0m 2025-12-27T09:44:33.663Z: Date validation tests passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate name format" classname="dataValidation.spec.js" time="0.018">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.667Z: Testing name validation
+[32m[SUCCESS][0m 2025-12-27T09:44:33.679Z: Name validation tests passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate password format" classname="dataValidation.spec.js" time="0.016">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.696Z: Testing password validation
+[32m[SUCCESS][0m 2025-12-27T09:44:33.705Z: Password validation tests passed
+]]>
+</system-out>
+</testcase>
+<testcase name="Data Validation Tests › validate quantity format" classname="dataValidation.spec.js" time="0.023">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:33.716Z: Testing quantity validation
+[32m[SUCCESS][0m 2025-12-27T09:44:33.727Z: Quantity validation tests passed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ecommerce.spec.js" timestamp="2025-12-27T09:44:31.642Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.928" errors="0">
+<testcase name="Ecommerce flow: add, search, cart, shipping, payment, success" classname="ecommerce.spec.js" time="13.928">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:34.405Z: Setting up practiceSitePage fixture
+[36m[INFO][0m 2025-12-27T09:44:34.405Z: Navigating to https://testerbud.com/
+[32m[SUCCESS][0m 2025-12-27T09:44:41.846Z: Homepage loaded successfully
+[36m[INFO][0m 2025-12-27T09:44:41.847Z: Starting Ecommerce Flow Test
+[32m[SUCCESS][0m 2025-12-27T09:44:41.848Z: Data validation passed
+[36m[INFO][0m 2025-12-27T09:44:41.849Z: Selecting practice site at index 4
+[36m[INFO][0m 2025-12-27T09:44:41.849Z: Opening practice sites dropdown
+[32m[SUCCESS][0m 2025-12-27T09:44:44.551Z: Successfully navigated to practice site 4
+[36m[INFO][0m 2025-12-27T09:44:44.680Z: Adding product: Laptop Pro x2
+[36m[INFO][0m 2025-12-27T09:44:44.823Z: Adding product: Wireless Mouse x3
+[36m[INFO][0m 2025-12-27T09:44:44.976Z: Searching for product: Monitor 4K
+[36m[INFO][0m 2025-12-27T09:44:45.013Z: Adding searched product: Monitor 4K x1
+[36m[INFO][0m 2025-12-27T09:44:45.216Z: Opening cart modal
+[36m[INFO][0m 2025-12-27T09:44:45.831Z: Removing product from cart: Wireless Mouse
+[36m[INFO][0m 2025-12-27T09:44:46.149Z: Proceeding to buy
+[36m[INFO][0m 2025-12-27T09:44:46.245Z: Filling shipping address
+[36m[INFO][0m 2025-12-27T09:44:46.576Z: Filling payment details
+[36m[INFO][0m 2025-12-27T09:44:47.271Z: Verifying order success
+[32m[SUCCESS][0m 2025-12-27T09:44:47.720Z: Ecommerce flow passed successfully
+[36m[INFO][0m 2025-12-27T09:44:47.722Z: Fixture teardown completed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="forgotPassword.spec.js" timestamp="2025-12-27T09:44:31.642Z" hostname="chromium" tests="1" failures="0" skipped="0" time="12.999" errors="0">
+<testcase name="Forgot Password Flow" classname="forgotPassword.spec.js" time="12.999">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:34.414Z: Setting up practiceSitePage fixture
+[36m[INFO][0m 2025-12-27T09:44:34.415Z: Navigating to https://testerbud.com/
+[32m[SUCCESS][0m 2025-12-27T09:44:42.981Z: Homepage loaded successfully
+[36m[INFO][0m 2025-12-27T09:44:42.982Z: Starting Forgot Password Test
+[32m[SUCCESS][0m 2025-12-27T09:44:42.982Z: Forgot Password data validation passed
+[36m[INFO][0m 2025-12-27T09:44:42.982Z: Selecting practice site at index 2
+[36m[INFO][0m 2025-12-27T09:44:42.982Z: Opening practice sites dropdown
+[32m[SUCCESS][0m 2025-12-27T09:44:45.670Z: Successfully navigated to practice site 2
+[32m[SUCCESS][0m 2025-12-27T09:44:46.631Z: Forgot Password flow passed successfully
+[36m[INFO][0m 2025-12-27T09:44:46.632Z: Fixture teardown completed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="login.spec.js" timestamp="2025-12-27T09:44:31.642Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.084" errors="0">
+<testcase name="login flow with first practice site" classname="login.spec.js" time="13.084">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:34.473Z: Setting up practiceSitePage fixture
+[36m[INFO][0m 2025-12-27T09:44:34.473Z: Navigating to https://testerbud.com/
+[32m[SUCCESS][0m 2025-12-27T09:44:42.378Z: Homepage loaded successfully
+[36m[INFO][0m 2025-12-27T09:44:42.380Z: Starting Login Test
+[32m[SUCCESS][0m 2025-12-27T09:44:42.380Z: Credentials validation passed
+[36m[INFO][0m 2025-12-27T09:44:42.381Z: Selecting first practice site
+[36m[INFO][0m 2025-12-27T09:44:42.381Z: Selecting practice site at index 0
+[36m[INFO][0m 2025-12-27T09:44:42.381Z: Opening practice sites dropdown
+[32m[SUCCESS][0m 2025-12-27T09:44:44.775Z: Successfully navigated to practice site 0
+[36m[INFO][0m 2025-12-27T09:44:44.775Z: Attempting login with email: user@premiumbank.com
+[35m[DEBUG][0m 2025-12-27T09:44:44.776Z: LoginPage initialized
+[36m[INFO][0m 2025-12-27T09:44:44.777Z: Filling email field: user@premiumbank.com
+[35m[DEBUG][0m 2025-12-27T09:44:44.887Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:44.977Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:44.977Z: Filling password field
+[35m[DEBUG][0m 2025-12-27T09:44:44.986Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:45.060Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:45.060Z: Clicking sign in button
+[35m[DEBUG][0m 2025-12-27T09:44:45.083Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:46.668Z: ✓ Operation succeeded on attempt 1
+[32m[SUCCESS][0m 2025-12-27T09:44:46.668Z: Login action completed
+[36m[INFO][0m 2025-12-27T09:44:46.668Z: Verifying welcome message
+[36m[INFO][0m 2025-12-27T09:44:46.668Z: Verifying welcome message visibility
+[32m[SUCCESS][0m 2025-12-27T09:44:46.695Z: Welcome message is visible: "Login Successful! Welcome to Premium Banking."
+[32m[SUCCESS][0m 2025-12-27T09:44:46.698Z: Login test passed successfully
+[36m[INFO][0m 2025-12-27T09:44:46.701Z: Fixture teardown completed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="registration.spec.js" timestamp="2025-12-27T09:44:31.642Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.61" errors="0">
+<testcase name="Registration Flow with valid data" classname="registration.spec.js" time="13.61">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:34.455Z: Setting up practiceSitePage fixture
+[36m[INFO][0m 2025-12-27T09:44:34.455Z: Navigating to https://testerbud.com/
+[32m[SUCCESS][0m 2025-12-27T09:44:41.701Z: Homepage loaded successfully
+[36m[INFO][0m 2025-12-27T09:44:41.702Z: Starting Registration Test
+[32m[SUCCESS][0m 2025-12-27T09:44:41.702Z: Registration data validation passed
+[36m[INFO][0m 2025-12-27T09:44:41.702Z: Selecting Registration practice site
+[36m[INFO][0m 2025-12-27T09:44:41.702Z: Selecting practice site at index 3
+[36m[INFO][0m 2025-12-27T09:44:41.702Z: Opening practice sites dropdown
+[32m[SUCCESS][0m 2025-12-27T09:44:45.666Z: Successfully navigated to practice site 3
+[36m[INFO][0m 2025-12-27T09:44:45.667Z: Filling registration form
+[36m[INFO][0m 2025-12-27T09:44:47.363Z: Verifying registration success message
+[32m[SUCCESS][0m 2025-12-27T09:44:47.376Z: Registration test passed successfully
+[36m[INFO][0m 2025-12-27T09:44:47.377Z: Fixture teardown completed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="webForm.spec.js" timestamp="2025-12-27T09:44:31.642Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.795" errors="0">
+<testcase name="Web Form Automation flow with dummy data" classname="webForm.spec.js" time="11.795">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-27T09:44:34.496Z: Setting up practiceSitePage fixture
+[36m[INFO][0m 2025-12-27T09:44:34.497Z: Navigating to https://testerbud.com/
+[32m[SUCCESS][0m 2025-12-27T09:44:41.213Z: Homepage loaded successfully
+[36m[INFO][0m 2025-12-27T09:44:41.214Z: Starting Web Form Automation Test
+[32m[SUCCESS][0m 2025-12-27T09:44:41.214Z: Form data validation passed
+[36m[INFO][0m 2025-12-27T09:44:41.214Z: Selecting second practice site (Web Form Automation)
+[36m[INFO][0m 2025-12-27T09:44:41.215Z: Selecting practice site at index 1
+[36m[INFO][0m 2025-12-27T09:44:41.215Z: Opening practice sites dropdown
+[32m[SUCCESS][0m 2025-12-27T09:44:43.418Z: Successfully navigated to practice site 1
+[35m[DEBUG][0m 2025-12-27T09:44:43.419Z: AutomateWebFormPage initialized
+[36m[INFO][0m 2025-12-27T09:44:43.419Z: Filling form with test data
+[35m[DEBUG][0m 2025-12-27T09:44:43.420Z: Form data validation passed
+[36m[INFO][0m 2025-12-27T09:44:43.420Z: Selecting country: India
+[35m[DEBUG][0m 2025-12-27T09:44:43.519Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:43.564Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:43.564Z: Selecting title: Mr.
+[35m[DEBUG][0m 2025-12-27T09:44:43.586Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:43.625Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:43.625Z: Filling first name: Marghoob
+[35m[DEBUG][0m 2025-12-27T09:44:43.639Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:43.707Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:43.707Z: Filling last name: Alam
+[35m[DEBUG][0m 2025-12-27T09:44:43.718Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:43.768Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:43.768Z: Filling date of birth: 1995-08-15
+[35m[DEBUG][0m 2025-12-27T09:44:43.779Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:43.895Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:43.895Z: Filling joining date: 01/01/2024
+[35m[DEBUG][0m 2025-12-27T09:44:43.902Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:43.966Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:43.966Z: Filling email: marghoob@example.com
+[35m[DEBUG][0m 2025-12-27T09:44:43.972Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:44.020Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:44.020Z: Selecting phone country code: +91
+[35m[DEBUG][0m 2025-12-27T09:44:44.027Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:44.057Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:44.057Z: Filling phone number: 9876543210
+[35m[DEBUG][0m 2025-12-27T09:44:44.063Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:44.107Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:44.108Z: Selecting communication method: Phone
+[35m[DEBUG][0m 2025-12-27T09:44:44.113Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:45.094Z: ✓ Operation succeeded on attempt 1
+[36m[INFO][0m 2025-12-27T09:44:45.095Z: Clicking submit button
+[35m[DEBUG][0m 2025-12-27T09:44:45.127Z: Attempt 1/3: Executing operation
+[32m[SUCCESS][0m 2025-12-27T09:44:45.601Z: ✓ Operation succeeded on attempt 1
+[32m[SUCCESS][0m 2025-12-27T09:44:45.601Z: Form submitted successfully
+[36m[INFO][0m 2025-12-27T09:44:45.601Z: Verifying success message
+[36m[INFO][0m 2025-12-27T09:44:45.601Z: Verifying success message visibility
+[32m[SUCCESS][0m 2025-12-27T09:44:45.618Z: Success message is visible: "✕Details Successfully Added!Thank you for practicing form automation.We do not store any data. Please avoid entering personal information. Use only dummy data for practicing automation scripts. 😊Go Back to Form"
+[32m[SUCCESS][0m 2025-12-27T09:44:45.620Z: Web Form test passed successfully
+[36m[INFO][0m 2025-12-27T09:44:45.621Z: Fixture teardown completed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

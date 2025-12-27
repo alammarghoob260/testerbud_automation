@@ -1,25 +1,26 @@
 // pages/ForgotPasswordPage.js
+import { expect } from '@playwright/test';
+
 class ForgotPasswordPage {
   constructor(page) {
     this.page = page;
-    this.emailInput = page.locator(
-      '#root > div.min-vh-100.d-flex.flex-column.justify-content-center.container-fluid > div > div > div:nth-child(4) > div > form > div.mb-3 > input'
-    );
 
-    this.continueButton = page.locator(
-      '#root > div.min-vh-100.d-flex.flex-column.justify-content-center.container-fluid > div > div > div:nth-child(4) > div > form > div.d-grid.gap-2 > button'
-    );
-
-    this.pageHeading = page.locator(
-      '#root > div.min-vh-100.d-flex.flex-column.justify-content-center.container-fluid > div > div > div:nth-child(4) > div > h3'
-    );
+    // ✅ Use semantic locator for the Forgot Password heading
+    this.pageHeading = page.getByRole('heading', {
+      level: 1,
+      name: 'Master Password Recovery Automation',
+    });
+    this.emailInput = page.getByPlaceholder('Enter your registered email');
+    this.continueButton = page.getByRole('button', { name: 'Continue' });
   }
 
   async isVisible() {
-    return await this.pageHeading.isVisible();
+    await expect(this.pageHeading).toBeVisible({ timeout: 10000 });
+    return true;
   }
 
   async enterEmail(email) {
+    await expect(this.emailInput).toBeVisible({ timeout: 10000 });
     await this.emailInput.fill(email);
   }
 
