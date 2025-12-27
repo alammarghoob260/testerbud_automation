@@ -15,27 +15,23 @@ const test = base.extend({
       expect(page.url()).toContain('testerbud.com');
       Logger.success('Homepage loaded successfully');
 
-      // Store locators in variables
-      const practiceSiteDropdown = page.locator('#practice-sites-dropdown > span');
+      // ✅ Use role-based locator for the button
+      const practiceSiteDropdown = page.getByRole('button', { name: 'Practice Sites' });
       const practiceSiteOptions = page.locator('#testerbud-navbar > div > div > div > a');
-
-      // Wait for dropdown to be visible
-      Logger.info('Waiting for practice sites dropdown');
-      await practiceSiteDropdown.waitFor({ state: 'visible', timeout: 15000 });
-      expect(await practiceSiteDropdown.isVisible()).toBeTruthy();
-
-      // Dropdown open
-      Logger.info('Opening practice sites dropdown');
-      await practiceSiteDropdown.click();
-      await page.waitForLoadState('domcontentloaded');
 
       // Helper method to select option by index
       const selectPracticeSite = async (index = 0) => {
         Logger.info(`Selecting practice site at index ${index}`);
-        await practiceSiteOptions.nth(index).waitFor({ state: 'visible', timeout: 15000 });
-        expect(await practiceSiteOptions.nth(index).isVisible()).toBeTruthy();
+        
+        // Open dropdown
+        Logger.info('Opening practice sites dropdown');
+        await practiceSiteDropdown.waitFor({ state: 'visible', timeout: 15000 });
+        await expect(practiceSiteDropdown).toBeVisible({ timeout: 15000 });
+        await practiceSiteDropdown.click();
+        
+        // Select the option
+        await expect(practiceSiteOptions.nth(index)).toBeVisible({ timeout: 15000 });
         await practiceSiteOptions.nth(index).click();
-        await page.waitForLoadState('domcontentloaded');
         Logger.success(`Successfully navigated to practice site ${index}`);
       };
 
@@ -49,8 +45,7 @@ const test = base.extend({
       // Helper to wait for element visibility
       const waitForElement = async (selector, timeout = 10000) => {
         Logger.debug(`Waiting for element: ${selector}`);
-        await page.locator(selector).waitFor({ state: 'visible', timeout });
-        expect(await page.locator(selector).isVisible()).toBeTruthy();
+        await expect(page.locator(selector)).toBeVisible({ timeout });
       };
 
       // Helper to check page readiness

@@ -43,7 +43,7 @@ class RetryHelper {
         if (attempt < maxAttempts) {
           const waitTime = delayMs * Math.pow(2, attempt - 1); // Exponential backoff
           Logger.info(`Retrying in ${waitTime}ms... (${maxAttempts - attempt} retries left)`);
-          await new Promise(resolve => setTimeout(resolve, waitTime));
+          await new Promise((resolve) => setTimeout(resolve, waitTime));
         }
       }
     }
@@ -100,7 +100,7 @@ class RetryHelper {
           // Wait for navigation if page provided
           const [, clickResult] = await Promise.all([
             page.waitForLoadState('domcontentloaded').catch(() => null),
-            element.click()
+            element.click(),
           ]);
           return clickResult;
         } else {
@@ -155,9 +155,7 @@ class RetryHelper {
         // Verify filled value matches
         const filledValue = await element.inputValue();
         if (filledValue !== value) {
-          throw new Error(
-            `Fill verification failed: expected "${value}", got "${filledValue}"`
-          );
+          throw new Error(`Fill verification failed: expected "${value}", got "${filledValue}"`);
         }
         return filledValue;
       },

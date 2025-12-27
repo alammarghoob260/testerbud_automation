@@ -88,9 +88,7 @@ class AutomateWebFormPage {
       );
 
     // ✅ Success message with flexible selector
-    this.successMessage = page
-      .locator('.card-body > div, .alert, [data-testid="success"]')
-      .first();
+    this.successMessage = page.locator('.card-body > div, .alert, [data-testid="success"]').first();
 
     Logger.debug('AutomateWebFormPage initialized');
   }
@@ -144,7 +142,7 @@ class AutomateWebFormPage {
       await this.phoneCountryCodeDropdown.waitFor({ state: 'visible', timeout: 10000 });
       expect(await this.phoneCountryCodeDropdown.isVisible()).toBeTruthy();
       await RetryHelper.retrySelect(this.phoneCountryCodeDropdown, {
-        label: data.phoneCountryCode
+        label: data.phoneCountryCode,
       });
 
       Logger.info(`Filling phone number: ${data.phoneNumber}`);

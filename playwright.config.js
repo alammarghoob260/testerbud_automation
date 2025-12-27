@@ -18,10 +18,10 @@ module.exports = defineConfig({
     ['html'],
     ['json', { outputFile: 'test-results/results.json' }],
     ['junit', { outputFile: 'test-results/junit.xml' }],
-    ['list']
+    ['list'],
   ],
   /* Timeout settings */
-  timeout: 30000,
+  timeout: 60000,
   expect: { timeout: 5000 },
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

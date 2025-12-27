@@ -13,9 +13,9 @@ class LoginPage {
     this.rememberMeCheckbox = page.locator('#formBasicCheckbox');
 
     // ✅ Fallback to role-based selectors if CSS selectors fail
-    this.signInButton = page.locator('button.btn.btn-primary[type="submit"]').or(
-      page.getByRole('button', { name: /sign in/i })
-    );
+    this.signInButton = page
+      .locator('button.btn.btn-primary[type="submit"]')
+      .or(page.getByRole('button', { name: /sign in/i }));
 
     // ✅ Success alert message (more maintainable selector)
     this.welcomeMessage = page.locator('.alert.alert-success').first();
