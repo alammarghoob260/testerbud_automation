@@ -22,18 +22,29 @@ export class ShippingModal {
     return this.title.isVisible();
   }
 
-  async fillAddress(details) {
-    await this.fullName.click();
-    await this.fullName.fill(details.fullName);
-    await this.street.click();
-    await this.street.fill(details.street);
-    await this.city.click();
-    await this.city.fill(details.city);
-    await this.state.click();
-    await this.state.fill(details.state);
-    await this.zip.click();
-    await this.zip.fill(details.zip);
-  }
+ async fillAddress(details) {
+  // 👇 Scroll entire page down once (visible in headed mode)
+  await this.page.evaluate(() => window.scrollBy(0, window.innerHeight));
+
+  // Now proceed with click + fill
+  await this.fullName.click();
+  await this.fullName.fill(details.fullName);
+
+  await this.street.click();
+  await this.street.fill(details.street);
+
+  await this.city.click();
+  await this.city.fill(details.city);
+
+  await this.state.click();
+  await this.state.fill(details.state);
+
+  await this.zip.click();
+  await this.zip.fill(details.zip);
+}
+
+
+
 
   async continue() {
     await expect(this.saveAndContinue).toBeEnabled();
