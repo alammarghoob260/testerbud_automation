@@ -45,40 +45,102 @@ export const ecommerceDetails = {
 
   // 📍 Address (fixed for validation)
   address: {
-    fullName: 'John Smith', // valid name
-    street: '123 Main Street', // 3+ chars
-    city: 'New York', // 2+ chars
-    state: 'NY', // 2+ chars
-    zip: '10001', // 4–10 digits
+    fullName: 'John Smith',
+    street: '123 Main Street',
+    city: 'New York',
+    state: 'NY',
+    zip: '10001',
   },
 
   // 💳 Payment (fixed for validation)
   payment: {
-    cardNumber: '5555555555554444', // valid Mastercard test number
-    expiry: '12/25', // MM/YY format
-    cvv: '123', // 3-digit CVV
+    cardNumber: '5555555555554444',
+    expiry: '12/25',
+    cvv: '123',
   },
+};
+
+// ✈️ Flight Booking Flow Details
+export const flightDetails = {
+  form: {
+    from: 'London',
+    to: 'Singapore',
+    departureDate: '2025-12-31',
+    returnDate: '2026-01-10',
+    oneWay: false,
+    passengers: 1,
+    travelClass: 'Economy',
+  },
+  selection: {
+    departureIndex: 0,
+    returnIndex: 0,
+  },
+  expectedTotal: 1032,
+  availableFlights: {
+    departure: [
+      {
+        airline: 'Global Wings',
+        flightNo: 'GW205',
+        route: 'London (08:00) → Singapore (12:00)',
+        date: '2025-12-31',
+        duration: '4h 0m',
+        price: 649,
+      },
+      {
+        airline: 'Sky High Airlines',
+        flightNo: 'SH412',
+        route: 'London (14:30) → Singapore (18:15)',
+        date: '2025-12-31',
+        duration: '3h 45m',
+        price: 414,
+      },
+    ],
+    return: [
+      {
+        airline: 'Global Wings',
+        flightNo: 'GW206',
+        route: 'Singapore (16:00) → London (20:00)',
+        date: '2026-01-10',
+        duration: '4h 0m',
+        price: 689,
+      },
+      {
+        airline: 'Air Swift',
+        flightNo: 'AS790',
+        route: 'Singapore (20:00) → London (23:30)',
+        date: '2026-01-10',
+        duration: '3h 30m',
+        price: 565,
+      },
+    ],
+  },
+};
+
+// Flight booking payment details
+export const paymentDetails = {
+  cardNumber: '4111111111111111',
+  expiryDate: '09/26',
+  expiry: '09/26',
+  cvv: '123',
 };
 
 // 📍 Address Data (for validation testing)
 export const addressData = {
-  fullName: 'Marghoob Alam', // valid name (2+ letters)
-  street: '12A Green Park Road', // 3+ chars with numbers, letters, spaces
-  city: 'Kolkata', // 2+ chars, letters only
-  state: 'West Bengal', // 2+ chars, letters only
-  zip: '700001', // 4–10 digits
+  fullName: 'Marghoob Alam',
+  street: '12A Green Park Road',
+  city: 'Kolkata',
+  state: 'West Bengal',
+  zip: '700001',
 };
 
 // 💳 Payment Data (for validation testing)
 export const paymentData = {
-  cardNumber: '4111111111111111', // valid 16-digit Visa test number
-  expiry: '12/25', // MM/YY format
-  cvv: '123', // 3-digit CVV
+  cardNumber: '4111111111111111',
+  expiry: '12/25',
+  cvv: '123',
 };
 
 // 🔧 Helper Generators
-
-// Generate a valid address with overrides
 export function generateAddress(overrides = {}) {
   const base = {
     fullName: 'Test User',
@@ -93,20 +155,18 @@ export function generateAddress(overrides = {}) {
   return addr;
 }
 
-// Generate a valid payment with overrides
 export function generatePayment(overrides = {}) {
   const base = {
     cardNumber: '4111111111111111',
     expiry: '11/27',
     cvv: '123',
   };
-  const pay = { ...base, ...overrides };
+  const pay = { ...base, ...overrides };ī
   const { isValid, errors } = DataValidator.isValidPayment(pay);
   if (!isValid) throw new Error(`Invalid payment: ${errors.join(', ')}`);
   return pay;
 }
 
-// Validate cart items array
 export function validateCartItems(items) {
   if (!Array.isArray(items)) {
     return { isValid: false, errors: ['Items must be an array'] };
@@ -135,7 +195,7 @@ export const ecommerceAddress = {
 
 // Test payment for ecommerce
 export const ecommercePayment = {
-  cardNumber: '5555555555554444', // Valid Mastercard test number
+  cardNumber: '5555555555554444',
   expiry: '06/26',
   cvv: '456',
 };

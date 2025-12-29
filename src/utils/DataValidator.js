@@ -138,6 +138,47 @@ class DataValidator {
 
     return { isValid: errors.length === 0, errors };
   }
+
+  /**
+   * Validates flight booking form data
+   * @param {Object} form - Form object with from, to, departureDate, returnDate, passengers, etc.
+   * @returns {Object} { isValid: boolean, errors: Array }
+   */
+  static isValidFlightForm(form = {}) {
+    if (!form || typeof form !== 'object') {
+      return { isValid: false, errors: ['Form must be a valid object'] };
+    }
+
+    const { from = '', to = '', departureDate = '', returnDate = '', passengers = 1 } = form;
+    const errors = [];
+
+    // Validate from location
+    if (!from || from.trim().length < 2) {
+      errors.push('Invalid departure location (min 2 characters required)');
+    }
+
+    // Validate to location
+    if (!to || to.trim().length < 2) {
+      errors.push('Invalid destination location (min 2 characters required)');
+    }
+
+    // Validate departure date
+    if (!this.isValidDate(departureDate)) {
+      errors.push('Invalid departure date (use YYYY-MM-DD format)');
+    }
+
+    // Validate return date (optional, but if provided should be valid)
+    if (returnDate && !this.isValidDate(returnDate)) {
+      errors.push('Invalid return date (use YYYY-MM-DD format)');
+    }
+
+    // Validate passengers
+    if (!this.isValidQuantity(passengers, 9)) {
+      errors.push('Invalid number of passengers (1-9 required)');
+    }
+
+    return { isValid: errors.length === 0, errors };
+  }
 }
 
 export { DataValidator };
