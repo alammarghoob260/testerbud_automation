@@ -6,7 +6,7 @@ export class PaymentModal {
     this.page = page;
     // Try to find any modal/dialog on the page
     this.modal = page.locator('[role="dialog"], .modal, .payment-modal');
-    
+
     // Heading - try multiple selectors
     this.heading = this.modal
       .getByRole('heading', { name: /payment|book/i })
@@ -29,15 +29,18 @@ export class PaymentModal {
       .or(this.modal.locator('h5, h6'));
 
     // Card fields - try multiple selectors
-    this.cardNumber = this.modal.getByLabel(/card|number/i)
+    this.cardNumber = this.modal
+      .getByLabel(/card|number/i)
       .or(this.modal.locator('#cardNumber, [name="cardNumber"], [placeholder*="card"]'))
       .first();
 
-    this.expiry = this.modal.getByLabel(/expiry|date/i)
+    this.expiry = this.modal
+      .getByLabel(/expiry|date/i)
       .or(this.modal.locator('#expiryDate, #expiry, [name="expiry"], [placeholder*="expiry"]'))
       .first();
 
-    this.cvv = this.modal.getByLabel(/cvv|cvc/i)
+    this.cvv = this.modal
+      .getByLabel(/cvv|cvc/i)
       .or(this.modal.locator('#cvv, [name="cvv"], [placeholder*="cvv"]'))
       .first();
 

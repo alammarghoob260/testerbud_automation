@@ -161,7 +161,8 @@ export function generatePayment(overrides = {}) {
     expiry: '11/27',
     cvv: '123',
   };
-  const pay = { ...base, ...overrides };ī
+  const pay = { ...base, ...overrides };
+  ī;
   const { isValid, errors } = DataValidator.isValidPayment(pay);
   if (!isValid) throw new Error(`Invalid payment: ${errors.join(', ')}`);
   return pay;
