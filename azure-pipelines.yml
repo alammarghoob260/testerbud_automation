@@ -1,0 +1,115 @@
+trigger:
+  - main
+  - develop
+
+pr:
+  - main
+  - develop
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  nodeVersion: '18.x'
+  artifactFeedName: 'TestArtifacts'
+
+stages:
+  - stage: Build
+    displayName: 'Build and Setup'
+    jobs:
+      - job: Setup
+        displayName: 'Setup and Install Dependencies'
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: $(nodeVersion)
+            displayName: 'Install Node.js'
+
+          - task: Npm@1
+            inputs:
+              command: 'install'
+              workingDir: '$(System.DefaultWorkingDirectory)'
+            displayName: 'npm install'
+
+          - task: Npm@1
+            inputs:
+              command: 'custom'
+              customCommand: 'run lint'
+              workingDir: '$(System.DefaultWorkingDirectory)'
+            displayName: 'Run ESLint'
+            continueOnError: true
+
+  - stage: Test
+    displayName: 'Run Tests'
+    dependsOn: Build
+    condition: succeeded()
+    jobs:
+      - job: PlaywrightTests
+        displayName: 'Execute Playwright Tests'
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: $(nodeVersion)
+            displayName: 'Install Node.js'
+
+          - task: Npm@1
+            inputs:
+              command: 'install'
+              workingDir: '$(System.DefaultWorkingDirectory)'
+            displayName: 'npm install'
+
+          - task: Npm@1
+            inputs:
+              command: 'custom'
+              customCommand: 'test'
+              workingDir: '$(System.DefaultWorkingDirectory)'
+            displayName: 'Run Playwright Tests'
+            env:
+              CI: true
+
+          - task: PublishTestResults@2
+            inputs:
+              testResultsFormat: 'JUnit'
+              testResultsFiles: '**/test-results/junit.xml'
+              searchFolder: '$(System.DefaultWorkingDirectory)'
+              mergeTestResults: true
+              failTaskOnFailedTests: false
+              testRunTitle: 'Playwright Test Results'
+            displayName: 'Publish Test Results'
+            condition: always()
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              pathToPublish: '$(System.DefaultWorkingDirectory)/playwright-report'
+              artifactName: 'playwright-report'
+            displayName: 'Publish Playwright Report'
+            condition: always()
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              pathToPublish: '$(System.DefaultWorkingDirectory)/test-results'
+              artifactName: 'test-results'
+            displayName: 'Publish Test Results Artifacts'
+            condition: always()
+
+  - stage: Reports
+    displayName: 'Test Reports'
+    dependsOn: Test
+    condition: always()
+    jobs:
+      - job: PublishReports
+        displayName: 'Publish Test Reports'
+        steps:
+          - task: DownloadBuildArtifacts@0
+            inputs:
+              buildType: 'current'
+              downloadType: 'specific'
+              downloadPath: '$(System.DefaultWorkingDirectory)'
+            displayName: 'Download Test Artifacts'
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              pathToPublish: '$(System.DefaultWorkingDirectory)/test-results'
+              artifactName: 'final-test-results'
+            displayName: 'Archive Final Test Results'
+            condition: always()
