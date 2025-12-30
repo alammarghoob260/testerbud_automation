@@ -1,130 +1,68 @@
-/**
- * BasicElementsPage Page Object
- * Handles basic UI elements interactions
- */
-
 class BasicElementsPage {
   constructor(page) {
     this.page = page;
-    
-    // Button Elements
-    this.primaryButton = 'button.btn-primary';
-    this.secondaryButton = 'button.btn-secondary';
-    this.dangerButton = 'button.btn-danger';
-    this.successButton = 'button.btn-success';
-    
-    // Text Elements
-    this.headingH1 = 'h1';
-    this.headingH2 = 'h2';
-    this.paragraph = 'p';
-    this.span = 'span';
-    
-    // Link Elements
-    this.links = 'a';
-    this.externalLink = 'a[target="_blank"]';
-    
-    // List Elements
-    this.unorderedList = 'ul';
-    this.orderedList = 'ol';
-    this.listItem = 'li';
-    
-    // Badge Elements
-    this.badge = '.badge';
-    this.badgePrimary = '.badge-primary';
-    this.badgeSuccess = '.badge-success';
-    this.badgeDanger = '.badge-danger';
+
+    // Text Field
+    this.textField = page.getByLabel('Text Field (Input Box):');
+    this.textFieldOutput = page
+      .locator('#textField')
+      .locator('xpath=../../following-sibling::div//div[@class="output-box"]');
+
+    // Text Area
+    this.textArea = page.getByLabel('Text Area:');
+    this.textAreaOutput = page
+      .locator('#textArea')
+      .locator('xpath=../../following-sibling::div//div[@class="output-box"]');
+
+    // Button
+    this.clickMeButton = page.getByRole('button', { name: 'Click Me' });
+    this.clickMeOutput = page.locator('text=Clicked');
+
+    // Single Checkbox
+    this.singleCheckbox = page.locator('input.form-check-input').nth(0);
+
+    this.singleCheckboxOutput = page.locator(
+      '#root div.mt-5.explore-ui-container div:nth-child(7) div:nth-child(2) > div'
+    );
+
+    // Multiple Checkboxes
+    this.checkboxOption1 = page.locator('input.form-check-input').nth(1);
+    this.checkboxOption2 = page.locator('input.form-check-input').nth(2);
+    this.checkboxOption3 = page.locator('input.form-check-input').nth(3);
+    this.multipleCheckboxOutput = page.locator('(//div[@class="output-box"])[5]');
+
+    // Radio Buttons
+    this.radio1 = page.locator('input[type="radio"][value="Radio 1"]');
+    this.radio2 = page.locator('input[type="radio"][value="Radio 2"]');
+    this.radio3 = page.locator('input[type="radio"][value="Radio 3"]');
+    this.radioOutput = page.locator('(//div[@class="output-box"])[6]');
+
+    // Single Dropdown
+    this.singleDropdown = page.getByLabel('Dropdown (Single Select):');
+    this.singleDropdownOutput = page
+      .locator('#singleDropdown')
+      .locator('xpath=../../following-sibling::div//div[@class="output-box"]');
+
+    // Multi Dropdown
+    this.multiDropdown = page.getByLabel('Dropdown (Multi-Select):');
+    this.multiDropdownOutput = page
+      .locator('#multiDropdown')
+      .locator('xpath=../../following-sibling::div//div[@class="output-box"]');
   }
 
-  /**
-   * Click primary button
-   */
-  async clickPrimaryButton() {
-    await this.page.click(this.primaryButton);
-  }
-
-  /**
-   * Click secondary button
-   */
-  async clickSecondaryButton() {
-    await this.page.click(this.secondaryButton);
-  }
-
-  /**
-   * Click danger button
-   */
-  async clickDangerButton() {
-    await this.page.click(this.dangerButton);
-  }
-
-  /**
-   * Click success button
-   */
-  async clickSuccessButton() {
-    await this.page.click(this.successButton);
-  }
-
-  /**
-   * Get heading text
-   */
-  async getHeadingText(level = 'h1') {
-    const selector = level;
-    return await this.page.textContent(selector);
-  }
-
-  /**
-   * Get paragraph text
-   */
-  async getParagraphText(index = 0) {
-    const elements = await this.page.$$(this.paragraph);
-    if (elements.length > index) {
-      return await elements[index].textContent();
-    }
-    return null;
-  }
-
-  /**
-   * Click external link
-   */
-  async clickExternalLink() {
-    await this.page.click(this.externalLink);
-  }
-
-  /**
-   * Get all links count
-   */
-  async getLinksCount() {
-    const links = await this.page.$$(this.links);
-    return links.length;
-  }
-
-  /**
-   * Get badge text
-   */
-  async getBadgeText() {
-    return await this.page.textContent(this.badge);
-  }
-
-  /**
-   * Get primary badge text
-   */
-  async getPrimaryBadgeText() {
-    return await this.page.textContent(this.badgePrimary);
-  }
-
-  /**
-   * Check if button is visible
-   */
-  async isButtonVisible(buttonType = 'primary') {
-    const selector = `button.btn-${buttonType}`;
-    return await this.page.isVisible(selector);
-  }
-
-  /**
-   * Check if heading is visible
-   */
-  async isHeadingVisible(level = 'h1') {
-    return await this.page.isVisible(level);
+  async checkBasicElementsVisible() {
+    await Promise.all([
+      this.textField.waitFor(),
+      this.textArea.waitFor(),
+      this.clickMeButton.waitFor(),
+      this.singleCheckbox.waitFor(),
+      this.checkboxOption1.waitFor(),
+      this.radio1.waitFor(),
+      this.singleDropdown.waitFor(),
+      this.multiDropdown.waitFor(),
+    ]);
+    return true;
   }
 }
 
-module.exports = BasicElementsPage;
+export { BasicElementsPage };

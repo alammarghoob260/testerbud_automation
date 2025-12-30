@@ -1,8 +1,31 @@
-// src/utils/testData.js
 import { DataValidator } from './DataValidator.js';
 
 // 🌐 Homepage URL
 export const homePageUrl = 'https://testerbud.com/';
+
+// 📝 UI Playground -
+export const uiPlaygroundData = {
+  // Basic Elements Test Data
+  textFieldValue: 'Hello TesterBud',
+  textAreaValue: 'Sample textarea input',
+  buttonOutput: 'Clicked 1 times',
+  singleCheckboxOutput: 'Checked',
+  multipleCheckboxSelection: ['Option 1', 'Option 3'],
+  multipleCheckboxOutput: 'Checked: option1, option3',
+  radioSelection: 'Radio 2',
+  singleDropdownSelection: 'India',
+  multiDropdownSelection: ['Option A', 'Option C'],
+  multiDropdownOutput: 'Option A, Option C',
+
+  // Interactive Elements
+  linkOutput: 'Click the link',
+  imageOutput: 'Click the image',
+  tableOutput: 'Click a table header to "sort"',
+  tooltipOutput: 'Hover over "Hover Me"',
+  sliderValue: '50',
+  sliderOutput: 'Slider Value: 50',
+  progressOutput: 'Progress: 30%',
+};
 
 // 📝 Web Form Data (for registration / forms)
 export const webFormData = {
@@ -162,7 +185,6 @@ export function generatePayment(overrides = {}) {
     cvv: '123',
   };
   const pay = { ...base, ...overrides };
-  ī;
   const { isValid, errors } = DataValidator.isValidPayment(pay);
   if (!isValid) throw new Error(`Invalid payment: ${errors.join(', ')}`);
   return pay;
