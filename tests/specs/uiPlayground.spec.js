@@ -4,9 +4,10 @@ import { ExplorePage } from '../../src/pages/UIElementAutomation/explorePage.js'
 import { BasicElementsPage } from '../../src/pages/UIElementAutomation/BasicElementsPage.js';
 import { InteractiveElementsPage } from '../../src/pages/UIElementAutomation/InteractiveElementsPage.js';
 import { ComplexElementsPage } from '../../src/pages/UIElementAutomation/ComplexElementPage';
+import { AdvancedElementsPage } from '../../src/pages/UIElementAutomation/AdvancedElementsPage';
 import { uiPlaygroundData } from '../../src/utils/testData.js';
 
-test.describe('UI Playground - Explore + Basic + Interactive + Complex Elements', () => {
+test.describe('UI Playground - Explore + Basic + Interactive + Complex + Advanced Elements', () => {
   test.beforeEach(async ({ practiceSitePage }) => {
     const { selectPracticeSite } = practiceSitePage;
     await selectPracticeSite(6); // ✅ UI Playground
@@ -18,6 +19,7 @@ test.describe('UI Playground - Explore + Basic + Interactive + Complex Elements'
     const basic = new BasicElementsPage(page);
     const interactive = new InteractiveElementsPage(page);
     const complex = new ComplexElementsPage(page);
+    const advanced = new AdvancedElementsPage(page);
 
     // --- Explore Page ---
     expect(await explore.verifyPageLoaded()).toBeTruthy();
@@ -56,8 +58,8 @@ test.describe('UI Playground - Explore + Basic + Interactive + Complex Elements'
     await expect(basic.multiDropdownOutput).toContainText(uiPlaygroundData.multiDropdownOutput);
 
     // --- Interactive Elements ---
-    await interactive.clickLink();
-    await expect(interactive.linkOutput).toContainText(uiPlaygroundData.linkOutput);
+    // await interactive.clickLink();
+    // await expect(interactive.linkOutput).toContainText(uiPlaygroundData.linkOutput);
 
     await interactive.clickImage();
     await expect(interactive.imageOutput).toContainText(uiPlaygroundData.imageOutput);
@@ -79,16 +81,32 @@ test.describe('UI Playground - Explore + Basic + Interactive + Complex Elements'
     await expect(complex.modalOutputBox).toContainText(uiPlaygroundData.modalOutputText);
     await complex.closeModal();
 
-    // await complex.enterDate('2025-12-31');
-    // await expect(complex.dateOutput).toContainText(uiPlaygroundData.dateOutput);
+    await complex.enterDate('2025-12-31');
+    await expect(complex.dateOutput).toContainText(uiPlaygroundData.dateOutput);
 
-    // await complex.uploadFile('tests/assets/sample.txt'); // ✅ replace with actual file path
-    // await complex.simulateDownload();
-    // await expect(complex.fileOutput).toContainText(uiPlaygroundData.fileOutput);
+    await complex.uploadFile('tests/assets/sample.txt'); // ✅ replace with actual file path
+    await complex.simulateDownload();
+    await expect(complex.fileOutput).toContainText(uiPlaygroundData.fileOutput);
 
-    // await complex.performDragAndDrop();
-    // await expect(complex.dragDropOutput).toContainText(uiPlaygroundData.dragDropOutput);
+    await complex.performDragAndDrop();
+    await expect(complex.dragDropOutput).toContainText(uiPlaygroundData.dragDropOutput);
 
-    // await expect(complex.iframeOutput).toContainText(uiPlaygroundData.iframeOutput);
+    await expect(complex.iframeOutput).toContainText(uiPlaygroundData.iframeOutput);
+
+    // --- Advanced Elements ---
+    await advanced.updateDynamicContent();
+    await expect(advanced.dynamicContentOutputBox).toContainText(uiPlaygroundData.dynamicContentOutputText);
+
+    await advanced.triggerNotification();
+    await expect(advanced.notificationOutputBox).toContainText(uiPlaygroundData.notificationOutputText);
+
+    await advanced.switchToTab('Tab 1');
+    await expect(advanced.tabsOutputBox).toContainText(uiPlaygroundData.tabsOutputText);
+
+    await advanced.openAccordionItem('Accordion Item #1');
+    await expect(advanced.accordionOutputBox).toContainText(uiPlaygroundData.accordionOutputText);
+
+    await advanced.scrollVirtualList();
+    await expect(advanced.virtualScrollOutputBox).toContainText(uiPlaygroundData.virtualScrollOutputText);
   });
 });

@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 6
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 6
         },
         "id": "chromium",
         "name": "chromium",
@@ -63,7 +63,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 6
         },
         "id": "firefox",
         "name": "firefox",
@@ -79,7 +79,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 6
         },
         "id": "webkit",
         "name": "webkit",
@@ -101,6 +101,2688 @@
   },
   "suites": [
     {
+      "title": "dataValidation.spec.js",
+      "file": "dataValidation.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Data Validation Tests",
+          "file": "dataValidation.spec.js",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "validate form test data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 29,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:29:59.473Z: Running form data validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:29:59.475Z: Form data validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:29:59.428Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-2ae53a6aa9ebf4ee5445",
+              "file": "dataValidation.spec.js",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "validate login credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:29:59.542Z: Running credentials validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:29:59.543Z: Credentials validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:29:59.518Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-54de79e111d4313d67da",
+              "file": "dataValidation.spec.js",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "validate address fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:29:59.589Z: Running address validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:29:59.590Z: Address validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:29:59.570Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-99fba11d156df2be99b7",
+              "file": "dataValidation.spec.js",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "validate payment details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:29:59.649Z: Running payment validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:29:59.651Z: Payment validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:29:59.627Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-a2faa40676b95d87f038",
+              "file": "dataValidation.spec.js",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "validate individual form fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 52,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:29:59.804Z: Running individual field validation tests\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:29:59.807Z: Email validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:29:59.809Z: First name validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:29:59.811Z: Last name validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:29:59.813Z: DOB validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:29:59.815Z: Phone number validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:29:59.815Z: All field validations passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:29:59.673Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-d0391109b5df251b2125",
+              "file": "dataValidation.spec.js",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "validate email format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 83,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.096Z: Testing email validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:00.103Z: Email validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:29:59.838Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-2e9daeeb1f3954cf414a",
+              "file": "dataValidation.spec.js",
+              "line": 86,
+              "column": 7
+            },
+            {
+              "title": "validate phone number format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.246Z: Testing phone number validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:00.254Z: Phone number validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:00.153Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-f62628c49a9e9237c732",
+              "file": "dataValidation.spec.js",
+              "line": 94,
+              "column": 7
+            },
+            {
+              "title": "validate date format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.351Z: Testing date validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:00.372Z: Date validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:00.271Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-25b78d7c389e2c3bb690",
+              "file": "dataValidation.spec.js",
+              "line": 102,
+              "column": 7
+            },
+            {
+              "title": "validate name format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.416Z: Testing name validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:00.424Z: Name validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:00.393Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-2ab81d29f01bcbb31740",
+              "file": "dataValidation.spec.js",
+              "line": 111,
+              "column": 7
+            },
+            {
+              "title": "validate password format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.460Z: Testing password validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:00.466Z: Password validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:00.447Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-80538447acf50b2e80e9",
+              "file": "dataValidation.spec.js",
+              "line": 121,
+              "column": 7
+            },
+            {
+              "title": "validate quantity format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.482Z: Testing quantity validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:00.486Z: Quantity validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:00.476Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-cdaa05a4860236f21964",
+              "file": "dataValidation.spec.js",
+              "line": 130,
+              "column": 7
+            },
+            {
+              "title": "validate form test data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 29,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.387Z: Running form data validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.392Z: Form data validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.335Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-d45e8519f653ebe8e573",
+              "file": "dataValidation.spec.js",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "validate login credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 10,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.447Z: Running credentials validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.448Z: Credentials validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.427Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-847750a2c46802695057",
+              "file": "dataValidation.spec.js",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "validate address fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 20,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.490Z: Running address validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.491Z: Address validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.469Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-c55c17dc2059cfaf3fb0",
+              "file": "dataValidation.spec.js",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "validate payment details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.538Z: Running payment validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.539Z: Payment validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.522Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-4ddeaa683d6c69a83f46",
+              "file": "dataValidation.spec.js",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "validate individual form fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 16,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.572Z: Running individual field validation tests\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:12.576Z: Email validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:12.579Z: First name validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:12.581Z: Last name validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:12.583Z: DOB validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:12.585Z: Phone number validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.585Z: All field validations passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.554Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-630a4db16d00a0c61c88",
+              "file": "dataValidation.spec.js",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "validate email format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.615Z: Testing email validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.621Z: Email validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.601Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-e8525dd0fc7e4e48a9f1",
+              "file": "dataValidation.spec.js",
+              "line": 86,
+              "column": 7
+            },
+            {
+              "title": "validate phone number format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.652Z: Testing phone number validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.657Z: Phone number validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.639Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-a2bb4f71da5a98017004",
+              "file": "dataValidation.spec.js",
+              "line": 94,
+              "column": 7
+            },
+            {
+              "title": "validate date format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.688Z: Testing date validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.694Z: Date validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.670Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-eb62dded0538d890c6d3",
+              "file": "dataValidation.spec.js",
+              "line": 102,
+              "column": 7
+            },
+            {
+              "title": "validate name format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 13,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.718Z: Testing name validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.727Z: Name validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.705Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-bb336603629992958706",
+              "file": "dataValidation.spec.js",
+              "line": 111,
+              "column": 7
+            },
+            {
+              "title": "validate password format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 13,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.758Z: Testing password validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.768Z: Password validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.745Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-7549368512f6145d72b4",
+              "file": "dataValidation.spec.js",
+              "line": 121,
+              "column": 7
+            },
+            {
+              "title": "validate quantity format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 107,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.813Z: Testing quantity validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.905Z: Quantity validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:12.790Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-10ac6d75ff9badf534c2",
+              "file": "dataValidation.spec.js",
+              "line": 130,
+              "column": 7
+            },
+            {
+              "title": "validate form test data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 37,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.102Z: Running form data validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.105Z: Form data validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.035Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-e6b7b81d180e897c5074",
+              "file": "dataValidation.spec.js",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "validate login credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 19,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.189Z: Running credentials validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.190Z: Credentials validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.160Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-69f1de9a8e3933436443",
+              "file": "dataValidation.spec.js",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "validate address fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 27,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.296Z: Running address validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.298Z: Address validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.243Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-a26e6ccf7b2c4c68a494",
+              "file": "dataValidation.spec.js",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "validate payment details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 14,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.366Z: Running payment validation test\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.367Z: Payment validation passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.342Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-7123014b70f8f5259b71",
+              "file": "dataValidation.spec.js",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "validate individual form fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 17,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.422Z: Running individual field validation tests\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:40.425Z: Email validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:40.427Z: First name validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:40.429Z: Last name validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:40.432Z: DOB validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:40.434Z: Phone number validation passed\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.434Z: All field validations passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.398Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-7b0c04660c3e2c18cb02",
+              "file": "dataValidation.spec.js",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "validate email format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 30,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.497Z: Testing email validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.505Z: Email validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.463Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-0a0e103680206e808698",
+              "file": "dataValidation.spec.js",
+              "line": 86,
+              "column": 7
+            },
+            {
+              "title": "validate phone number format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 21,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.574Z: Testing phone number validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.581Z: Phone number validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.534Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-784dfd5320006dbea231",
+              "file": "dataValidation.spec.js",
+              "line": 94,
+              "column": 7
+            },
+            {
+              "title": "validate date format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.660Z: Testing date validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.666Z: Date validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.625Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-35e56161f87a5cb75a79",
+              "file": "dataValidation.spec.js",
+              "line": 102,
+              "column": 7
+            },
+            {
+              "title": "validate name format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 13,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.713Z: Testing name validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.722Z: Name validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.682Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-8b58e374750398486c80",
+              "file": "dataValidation.spec.js",
+              "line": 111,
+              "column": 7
+            },
+            {
+              "title": "validate password format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.777Z: Testing password validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.785Z: Password validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.738Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-d36cc8e7258fe3797d2e",
+              "file": "dataValidation.spec.js",
+              "line": 121,
+              "column": 7
+            },
+            {
+              "title": "validate quantity format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 16,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.834Z: Testing quantity validation\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.842Z: Quantity validation tests passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T20:30:40.814Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2abc4df966001d81b68-2791c26a275d53984036",
+              "file": "dataValidation.spec.js",
+              "line": 130,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ecommerce.spec.js",
+      "file": "ecommerce.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Ecommerce flow: add, search, cart, shipping, payment, success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11358,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.058Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.060Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:05.702Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:05.705Z: Starting Ecommerce Flow Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:05.706Z: Data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:05.707Z: Selecting practice site at index 4\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:05.707Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:06.523Z: Successfully navigated to practice site 4\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:06.675Z: Adding product: Laptop Pro x2\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:06.925Z: Adding product: Wireless Mouse x3\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:07.115Z: Searching for product: Monitor 4K\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:07.137Z: Adding searched product: Monitor 4K x1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:07.277Z: Opening cart modal\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:08.294Z: Removing product from cart: Wireless Mouse\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:08.664Z: Proceeding to buy\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:08.929Z: Filling shipping address\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:10.080Z: Filling payment details\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:10.487Z: Verifying order success\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:10.894Z: Ecommerce flow passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:10.897Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:29:59.462Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fa73be0b3bc382f58a89-6aecc1d21d556847b26c",
+          "file": "ecommerce.spec.js",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "Ecommerce flow: add, search, cart, shipping, payment, success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 18095,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:19.243Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:19.245Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:22.714Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:22.716Z: Starting Ecommerce Flow Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:22.717Z: Data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:22.718Z: Selecting practice site at index 4\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:22.718Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:24.705Z: Successfully navigated to practice site 4\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:25.477Z: Adding product: Laptop Pro x2\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:26.728Z: Adding product: Wireless Mouse x3\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:27.950Z: Searching for product: Monitor 4K\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:28.074Z: Adding searched product: Monitor 4K x1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:28.453Z: Opening cart modal\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:29.148Z: Removing product from cart: Wireless Mouse\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:29.505Z: Proceeding to buy\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:29.836Z: Filling shipping address\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:31.930Z: Filling payment details\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:33.315Z: Verifying order success\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:33.934Z: Ecommerce flow passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:33.939Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:14.528Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fa73be0b3bc382f58a89-f132aac8417befccc89f",
+          "file": "ecommerce.spec.js",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "Ecommerce flow: add, search, cart, shipping, payment, success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 22195,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.050Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.052Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:45.800Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:45.802Z: Starting Ecommerce Flow Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:45.804Z: Data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:45.804Z: Selecting practice site at index 4\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:45.804Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:48.909Z: Successfully navigated to practice site 4\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:49.132Z: Adding product: Laptop Pro x2\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:50.005Z: Adding product: Wireless Mouse x3\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:50.832Z: Searching for product: Monitor 4K\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:50.888Z: Adding searched product: Monitor 4K x1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:51.542Z: Opening cart modal\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:52.502Z: Removing product from cart: Wireless Mouse\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:53.049Z: Proceeding to buy\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:53.377Z: Filling shipping address\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:55.660Z: Filling payment details\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:56.598Z: Verifying order success\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:57.501Z: Ecommerce flow passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:57.505Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:40.037Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fa73be0b3bc382f58a89-36334248769e8501a7fb",
+          "file": "ecommerce.spec.js",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "FlightBooking.spec.js",
+      "file": "FlightBooking.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Flight booking: search, select, pay, success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 13982,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.314Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.317Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:07.180Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:07.182Z: Selecting practice site at index 5\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:07.182Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:09.272Z: Successfully navigated to practice site 5\n"
+                    },
+                    {
+                      "text": "Page title: TesterBud: Dummy Flight Booking Application\n"
+                    },
+                    {
+                      "text": "Body text preview: You need to enable JavaScript to run this app.TesterBud: Dummy Flight Booking Application Learn to automate flight booking processes, including selecting travel options and verifying booking confirmat\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.298Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:29:59.477Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "63ce5c59c52d65eb9282-f5534b5930624667be6e",
+          "file": "FlightBooking.spec.js",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "Flight booking: search, select, pay, success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 19056,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:17.424Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:17.425Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:23.745Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:23.747Z: Selecting practice site at index 5\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:23.747Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:28.767Z: Successfully navigated to practice site 5\n"
+                    },
+                    {
+                      "text": "Page title: Tester Buddy\n"
+                    },
+                    {
+                      "text": "Body text preview: You need to enable JavaScript to run this app.\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:33.697Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:12.986Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "63ce5c59c52d65eb9282-b59f858e2bbe0eaf6097",
+          "file": "FlightBooking.spec.js",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "Flight booking: search, select, pay, success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 9549,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.053Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.055Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:43.770Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:43.773Z: Selecting practice site at index 5\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:43.773Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:44.880Z: Successfully navigated to practice site 5\n"
+                    },
+                    {
+                      "text": "Page title: Tester Buddy\n"
+                    },
+                    {
+                      "text": "Body text preview: You need to enable JavaScript to run this app.TesterBud: Dummy Flight Booking Application Learn to automate flight booking processes, including selecting travel options and verifying booking confirmat\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:49.394Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:40.052Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "63ce5c59c52d65eb9282-281373b2d48ffdbc7ca5",
+          "file": "FlightBooking.spec.js",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "forgotPassword.spec.js",
+      "file": "forgotPassword.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Forgot Password Flow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 10194,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.311Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.313Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:06.458Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:06.459Z: Starting Forgot Password Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:06.459Z: Forgot Password data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:06.459Z: Selecting practice site at index 2\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:06.460Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:07.533Z: Successfully navigated to practice site 2\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:09.659Z: Forgot Password flow passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:09.664Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:29:59.519Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb6aabf83eab52345819-0fcd6c82f8a56482442f",
+          "file": "forgotPassword.spec.js",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "Forgot Password Flow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 14412,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:24.148Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:24.151Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:28.689Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:28.696Z: Starting Forgot Password Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:28.699Z: Forgot Password data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:28.700Z: Selecting practice site at index 2\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:28.700Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:31.298Z: Successfully navigated to practice site 2\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:34.623Z: Forgot Password flow passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:34.626Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:17.583Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb6aabf83eab52345819-526be915dc8ef75778d2",
+          "file": "forgotPassword.spec.js",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "Forgot Password Flow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 5826,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:42.183Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:42.184Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:44.763Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:44.765Z: Starting Forgot Password Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:44.765Z: Forgot Password data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:44.766Z: Selecting practice site at index 2\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:44.766Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:46.113Z: Successfully navigated to practice site 2\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:47.458Z: Forgot Password flow passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:47.460Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:41.732Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb6aabf83eab52345819-586a67c88f5597748342",
+          "file": "forgotPassword.spec.js",
+          "line": 11,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "login flow with first practice site",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 9090,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.454Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.456Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:05.705Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:05.707Z: Starting Login Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:05.708Z: Credentials validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:05.708Z: Selecting first practice site\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:05.708Z: Selecting practice site at index 0\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:05.709Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:06.615Z: Successfully navigated to practice site 0\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:06.615Z: Attempting login with email: user@premiumbank.com\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:06.616Z: LoginPage initialized\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:06.617Z: Filling email field: user@premiumbank.com\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:06.725Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:06.835Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:06.836Z: Filling password field\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:06.847Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:06.941Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:06.941Z: Clicking sign in button\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:06.964Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:08.486Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:08.486Z: Login action completed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:08.486Z: Verifying welcome message\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:08.486Z: Verifying welcome message visibility\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:08.503Z: Welcome message is visible: \"Login Successful! Welcome to Premium Banking.\"\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:08.506Z: Login test passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:08.510Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:29:59.523Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-6bc6b33130cfb7d5b2b5",
+          "file": "login.spec.js",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "login flow with first practice site",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 15938,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:22.575Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:22.577Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:27.680Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:27.682Z: Starting Login Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:27.683Z: Credentials validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:27.683Z: Selecting first practice site\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:27.683Z: Selecting practice site at index 0\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:27.684Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:32.353Z: Successfully navigated to practice site 0\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:32.353Z: Attempting login with email: user@premiumbank.com\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:32.355Z: LoginPage initialized\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:32.356Z: Filling email field: user@premiumbank.com\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:33.085Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:33.677Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:33.677Z: Filling password field\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:33.755Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:34.230Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:34.230Z: Clicking sign in button\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:34.313Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:34.481Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:34.481Z: Login action completed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:34.481Z: Verifying welcome message\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:34.481Z: Verifying welcome message visibility\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:34.527Z: Welcome message is visible: \"Login Successful! Welcome to Premium Banking.\"\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:34.531Z: Login test passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:34.536Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:17.262Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-f0769c9e4f1f677f034f",
+          "file": "login.spec.js",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "login flow with first practice site",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8465,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.507Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.507Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:45.620Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:45.622Z: Starting Login Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:45.622Z: Credentials validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:45.622Z: Selecting first practice site\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:45.622Z: Selecting practice site at index 0\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:45.622Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:48.554Z: Successfully navigated to practice site 0\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:48.554Z: Attempting login with email: user@premiumbank.com\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:48.555Z: LoginPage initialized\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:48.555Z: Filling email field: user@premiumbank.com\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:48.640Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:48.748Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:48.749Z: Filling password field\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:48.763Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:48.868Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:48.868Z: Clicking sign in button\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:48.911Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:49.222Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:49.222Z: Login action completed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:49.222Z: Verifying welcome message\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:49.222Z: Verifying welcome message visibility\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:49.243Z: Welcome message is visible: \"Login Successful! Welcome to Premium Banking.\"\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:49.244Z: Login test passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:49.246Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:40.900Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-533c82c3cde8fa26ff04",
+          "file": "login.spec.js",
+          "line": 14,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "registration.spec.js",
+      "file": "registration.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Registration Flow with valid data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 14054,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.226Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.229Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:07.887Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:07.889Z: Starting Registration Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:07.890Z: Registration data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:07.890Z: Selecting Registration practice site\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:07.890Z: Selecting practice site at index 3\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:07.890Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:11.565Z: Successfully navigated to practice site 3\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:11.566Z: Filling registration form\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.311Z: Verifying registration success message\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:13.330Z: Registration test passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.334Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:29:59.435Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1551a940dbfbf0872387-c71f676cd9b5e561b631",
+          "file": "registration.spec.js",
+          "line": 9,
+          "column": 5
+        },
+        {
+          "title": "Registration Flow with valid data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 14030,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:27.913Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:27.915Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:31.654Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:31.657Z: Starting Registration Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:31.658Z: Registration data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:31.659Z: Selecting Registration practice site\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:31.659Z: Selecting practice site at index 3\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:31.660Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:35.443Z: Successfully navigated to practice site 3\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:35.443Z: Filling registration form\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:36.850Z: Verifying registration success message\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:36.874Z: Registration test passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:36.878Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:19.292Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1551a940dbfbf0872387-da3dc09448f27983a1db",
+          "file": "registration.spec.js",
+          "line": 9,
+          "column": 5
+        },
+        {
+          "title": "Registration Flow with valid data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 9513,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:45.323Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:45.324Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:50.609Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:50.610Z: Starting Registration Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:50.610Z: Registration data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:50.610Z: Selecting Registration practice site\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:50.611Z: Selecting practice site at index 3\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:50.611Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:53.490Z: Successfully navigated to practice site 3\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:53.490Z: Filling registration form\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:53.990Z: Verifying registration success message\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:54.003Z: Registration test passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:54.005Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:44.778Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1551a940dbfbf0872387-f5a1eb99946a94d8f72e",
+          "file": "registration.spec.js",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
       "title": "uiPlayground.spec.js",
       "file": "uiPlayground.spec.js",
       "column": 0,
@@ -108,9 +2790,9 @@
       "specs": [],
       "suites": [
         {
-          "title": "UI Playground - Explore + Basic + Interactive + Complex Elements",
+          "title": "UI Playground - Explore + Basic + Interactive + Complex + Advanced Elements",
           "file": "uiPlayground.spec.js",
-          "line": 9,
+          "line": 10,
           "column": 6,
           "specs": [
             {
@@ -129,34 +2811,34 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 27557,
+                      "duration": 21556,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:39.842Z: Setting up practiceSitePage fixture\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.742Z: Setting up practiceSitePage fixture\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:39.844Z: Navigating to https://testerbud.com/\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:00.742Z: Navigating to https://testerbud.com/\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:50.970Z: Homepage loaded successfully\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:08.194Z: Homepage loaded successfully\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:50.971Z: Selecting practice site at index 6\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:08.195Z: Selecting practice site at index 6\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:50.971Z: Opening practice sites dropdown\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:08.195Z: Opening practice sites dropdown\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:58.395Z: Successfully navigated to practice site 6\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:11.335Z: Successfully navigated to practice site 6\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:35:06.963Z: Fixture teardown completed\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:21.827Z: Fixture teardown completed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-31T10:34:39.489Z",
+                      "startTime": "2025-12-31T20:30:00.515Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -164,9 +2846,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "f04f866db03e2ac9f6ef-955eb283e85aff8272d9",
+              "id": "f04f866db03e2ac9f6ef-c2281fe90f7b7ab32f08",
               "file": "uiPlayground.spec.js",
-              "line": 15,
+              "line": 16,
               "column": 7
             },
             {
@@ -182,37 +2864,37 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 24601,
+                      "duration": 25799,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:41.929Z: Setting up practiceSitePage fixture\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:35.780Z: Setting up practiceSitePage fixture\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:41.930Z: Navigating to https://testerbud.com/\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:35.782Z: Navigating to https://testerbud.com/\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:46.918Z: Homepage loaded successfully\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:42.819Z: Homepage loaded successfully\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:46.919Z: Selecting practice site at index 6\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:42.821Z: Selecting practice site at index 6\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:46.919Z: Opening practice sites dropdown\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:42.821Z: Opening practice sites dropdown\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:51.973Z: Successfully navigated to practice site 6\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:45.504Z: Successfully navigated to practice site 6\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:35:04.973Z: Fixture teardown completed\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:56.777Z: Fixture teardown completed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-31T10:34:39.490Z",
+                      "startTime": "2025-12-31T20:30:28.507Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -220,9 +2902,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "f04f866db03e2ac9f6ef-9b1611e1da14771fb96b",
+              "id": "f04f866db03e2ac9f6ef-489522a9a48955c54e01",
               "file": "uiPlayground.spec.js",
-              "line": 15,
+              "line": 16,
               "column": 7
             },
             {
@@ -238,37 +2920,37 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 15,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 31113,
+                      "duration": 17521,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:40.085Z: Setting up practiceSitePage fixture\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:47.990Z: Setting up practiceSitePage fixture\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:40.086Z: Navigating to https://testerbud.com/\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:47.990Z: Navigating to https://testerbud.com/\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:52.376Z: Homepage loaded successfully\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:50.994Z: Homepage loaded successfully\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:52.378Z: Selecting practice site at index 6\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:50.995Z: Selecting practice site at index 6\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:52.378Z: Opening practice sites dropdown\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:50.995Z: Opening practice sites dropdown\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:35:00.553Z: Successfully navigated to practice site 6\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:52.258Z: Successfully navigated to practice site 6\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:35:10.350Z: Fixture teardown completed\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:31:05.066Z: Fixture teardown completed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-31T10:34:39.487Z",
+                      "startTime": "2025-12-31T20:30:47.716Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -276,21 +2958,593 @@
                   "status": "expected"
                 }
               ],
-              "id": "f04f866db03e2ac9f6ef-1047a984fcf6ecb6c06d",
+              "id": "f04f866db03e2ac9f6ef-511e341152fca1e397c7",
               "file": "uiPlayground.spec.js",
-              "line": 15,
+              "line": 16,
               "column": 7
             }
           ]
+        }
+      ]
+    },
+    {
+      "title": "webForm.spec.js",
+      "file": "webForm.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Web Form Automation flow with dummy data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 6073,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:09.215Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:09.215Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.014Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.015Z: Starting Web Form Automation Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.016Z: Form data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.016Z: Selecting second practice site (Web Form Automation)\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.016Z: Selecting practice site at index 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.016Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:12.954Z: Successfully navigated to practice site 1\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:12.963Z: AutomateWebFormPage initialized\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.963Z: Filling form with test data\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:12.964Z: Form data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:12.964Z: Selecting country: India\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:13.130Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:13.172Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.172Z: Selecting title: Mr.\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:13.187Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:13.231Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.231Z: Filling first name: Marghoob\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:13.244Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:13.335Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.335Z: Filling last name: Alam\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:13.349Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:13.459Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.459Z: Filling date of birth: 1995-08-15\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:13.473Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:13.696Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.696Z: Filling joining date: 01/01/2024\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:13.706Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:13.811Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.812Z: Filling email: marghoob@example.com\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:13.826Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:13.923Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.923Z: Selecting phone country code: +91\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:13.933Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:13.981Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:13.981Z: Filling phone number: 9876543210\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:13.997Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:14.088Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:14.088Z: Selecting communication method: Phone\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:14.098Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:14.652Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:14.652Z: Clicking submit button\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:14.678Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:14.748Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:14.748Z: Form submitted successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:14.748Z: Verifying success message\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:14.748Z: Verifying success message visibility\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:14.769Z: Success message is visible: \"✕Details Successfully Added!Thank you for practicing form automation.We do not store any data. Please avoid entering personal information. Use only dummy data for practicing automation scripts. 😊Go Back to Form\"\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:14.771Z: Web Form test passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:14.773Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:09.074Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af4e06455975877a0237-edd6b963e496c9cf34f2",
+          "file": "webForm.spec.js",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "Web Form Automation flow with dummy data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 7874,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:34.898Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:34.899Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:38.143Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:38.144Z: Starting Web Form Automation Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:38.144Z: Form data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:38.144Z: Selecting second practice site (Web Form Automation)\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:38.144Z: Selecting practice site at index 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:38.144Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:39.228Z: Successfully navigated to practice site 1\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:39.229Z: AutomateWebFormPage initialized\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:39.229Z: Filling form with test data\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:39.230Z: Form data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:39.230Z: Selecting country: India\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:39.552Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:39.840Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:39.840Z: Selecting title: Mr.\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:39.857Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:39.913Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:39.914Z: Filling first name: Marghoob\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:39.935Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.117Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.117Z: Filling last name: Alam\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:40.136Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.271Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.272Z: Filling date of birth: 1995-08-15\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:40.296Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.726Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.726Z: Filling joining date: 01/01/2024\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:40.759Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:40.941Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:40.941Z: Filling email: marghoob@example.com\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:40.974Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:41.168Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.168Z: Selecting phone country code: +91\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:41.192Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:41.293Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.293Z: Filling phone number: 9876543210\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:41.314Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:41.432Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.432Z: Selecting communication method: Phone\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:41.455Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:41.586Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.586Z: Clicking submit button\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:41.612Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:41.726Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:41.726Z: Form submitted successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.727Z: Verifying success message\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.727Z: Verifying success message visibility\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:41.746Z: Success message is visible: \"✕Details Successfully Added!Thank you for practicing form automation.We do not store any data. Please avoid entering personal information. Use only dummy data for practicing automation scripts. 😊Go Back to Form\"\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:41.747Z: Web Form test passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:41.748Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:33.945Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af4e06455975877a0237-88815109f382c09dc1b0",
+          "file": "webForm.spec.js",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "Web Form Automation flow with dummy data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9515,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:49.877Z: Setting up practiceSitePage fixture\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:49.877Z: Navigating to https://testerbud.com/\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:54.160Z: Homepage loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:54.161Z: Starting Web Form Automation Test\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:54.161Z: Form data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:54.162Z: Selecting second practice site (Web Form Automation)\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:54.162Z: Selecting practice site at index 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:54.162Z: Opening practice sites dropdown\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:56.864Z: Successfully navigated to practice site 1\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:56.865Z: AutomateWebFormPage initialized\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:56.865Z: Filling form with test data\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:56.867Z: Form data validation passed\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:56.867Z: Selecting country: India\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:57.027Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:57.083Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:57.083Z: Selecting title: Mr.\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:57.102Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:57.150Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:57.150Z: Filling first name: Marghoob\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:57.164Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:57.251Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:57.251Z: Filling last name: Alam\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:57.271Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:57.349Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:57.349Z: Filling date of birth: 1995-08-15\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:57.361Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:57.636Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:57.636Z: Filling joining date: 01/01/2024\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:57.645Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:57.773Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:57.773Z: Filling email: marghoob@example.com\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:57.799Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:57.928Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:57.928Z: Selecting phone country code: +91\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:57.954Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:58.014Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:58.014Z: Filling phone number: 9876543210\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:58.025Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:58.157Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:58.158Z: Selecting communication method: Phone\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:58.167Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:58.450Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:58.450Z: Clicking submit button\n"
+                    },
+                    {
+                      "text": "\u001b[35m[DEBUG]\u001b[0m 2025-12-31T20:30:58.470Z: Attempt 1/3: Executing operation\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:58.808Z: ✓ Operation succeeded on attempt 1\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:58.808Z: Form submitted successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:58.808Z: Verifying success message\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:58.808Z: Verifying success message visibility\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:58.825Z: Success message is visible: \"✕Details Successfully Added!Thank you for practicing form automation.We do not store any data. Please avoid entering personal information. Use only dummy data for practicing automation scripts. 😊Go Back to Form\"\n"
+                    },
+                    {
+                      "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T20:30:58.826Z: Web Form test passed successfully\n"
+                    },
+                    {
+                      "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T20:30:58.827Z: Fixture teardown completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-31T20:30:49.551Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af4e06455975877a0237-ee7025402c1735f8c78a",
+          "file": "webForm.spec.js",
+          "line": 8,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-31T10:34:37.737Z",
-    "duration": 33121.668000000005,
-    "expected": 3,
+    "startTime": "2025-12-31T20:29:57.405Z",
+    "duration": 67917.307,
+    "expected": 54,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

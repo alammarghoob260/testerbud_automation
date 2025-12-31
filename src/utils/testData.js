@@ -29,10 +29,17 @@ export const uiPlaygroundData = {
   // --- Complex Elements ---
   modalOutputText: 'Modal is open',
   modalOutputBox: 'Modal is open',
-  dateOutput: 'Date selected: 2025-12-31',
-  fileOutput: 'No file selected',
-  dragDropOutput: 'Drag "Drag Me" to "Drop Here"',
+  dateOutput: '2025-12-31',
+  fileOutput: 'File "sample.txt" selected',
+  dragDropOutput: 'Dropped!',
   iframeOutput: 'Iframe loaded',
+
+  // --- Advanced UI Elements ---
+  dynamicContentOutputText: 'Click "Update Content" to see changes',
+  notificationOutputText: 'Click "Show Notification"',
+  tabsOutputText: 'Active Tab: tab1',
+  accordionOutputText: 'Accordion item "item1" is open',
+  virtualScrollOutputText: 'Scroll Position: 100',
 };
 
 // 📝 Web Form Data (for registration / forms)
