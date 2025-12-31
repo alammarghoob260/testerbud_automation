@@ -14,10 +14,10 @@ class InteractiveElementsPage {
     this.tableHeaderID = page.getByRole('columnheader', { name: 'ID' });
     this.tableHeaderName = page.getByRole('columnheader', { name: 'Name' });
     this.tableHeaderAge = page.getByRole('columnheader', { name: 'Age' });
-    this.tableOutput = page.locator('div.output-box', { hasText: /sort/ });
+    this.tableOutput = page.locator('.output-box').filter({ hasText: /sort/i });
 
     // 💬 Tooltip
-    this.tooltipTrigger = page.getByText('Hover Me');
+    this.tooltipTrigger = page.locator('(//span[normalize-space(text())="Hover Me"])[1]');
     this.tooltipOutput = page.locator('div.output-box', { hasText: /Hover over/ });
 
     // 🎚️ Slider

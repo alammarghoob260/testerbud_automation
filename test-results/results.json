@@ -3,7 +3,7 @@
     "configFile": "C:\\Users\\alamm\\Desktop\\TesterBud_Automation\\playwright.config.js",
     "rootDir": "C:/Users/alamm/Desktop/TesterBud_Automation/tests/specs",
     "forbidOnly": false,
-    "fullyParallel": true,
+    "fullyParallel": false,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "chromium",
         "name": "chromium",
@@ -63,7 +63,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "firefox",
         "name": "firefox",
@@ -79,7 +79,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "webkit",
         "name": "webkit",
@@ -108,13 +108,13 @@
       "specs": [],
       "suites": [
         {
-          "title": "UI Playground - Explore + Basic Elements",
+          "title": "UI Playground - Explore + Basic + Interactive + Complex Elements",
           "file": "uiPlayground.spec.js",
-          "line": 7,
+          "line": 9,
           "column": 6,
           "specs": [
             {
-              "title": "verify page heading and interact with basic elements",
+              "title": "verify page heading and interact with all elements",
               "ok": true,
               "tags": [],
               "tests": [
@@ -129,34 +129,34 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 18699,
+                      "duration": 27557,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-30T20:57:48.109Z: Setting up practiceSitePage fixture\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:39.842Z: Setting up practiceSitePage fixture\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-30T20:57:48.110Z: Navigating to https://testerbud.com/\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:39.844Z: Navigating to https://testerbud.com/\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-30T20:57:59.747Z: Homepage loaded successfully\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:50.970Z: Homepage loaded successfully\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-30T20:57:59.748Z: Selecting practice site at index 6\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:50.971Z: Selecting practice site at index 6\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-30T20:57:59.748Z: Opening practice sites dropdown\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:50.971Z: Opening practice sites dropdown\n"
                         },
                         {
-                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-30T20:58:04.082Z: Successfully navigated to practice site 6\n"
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:58.395Z: Successfully navigated to practice site 6\n"
                         },
                         {
-                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-30T20:58:06.342Z: Fixture teardown completed\n"
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:35:06.963Z: Fixture teardown completed\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-30T20:57:46.964Z",
+                      "startTime": "2025-12-31T10:34:39.489Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -164,9 +164,121 @@
                   "status": "expected"
                 }
               ],
-              "id": "f04f866db03e2ac9f6ef-e4e0dc13bc594884c326",
+              "id": "f04f866db03e2ac9f6ef-955eb283e85aff8272d9",
               "file": "uiPlayground.spec.js",
-              "line": 14,
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "verify page heading and interact with all elements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 24601,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:41.929Z: Setting up practiceSitePage fixture\n"
+                        },
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:41.930Z: Navigating to https://testerbud.com/\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:46.918Z: Homepage loaded successfully\n"
+                        },
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:46.919Z: Selecting practice site at index 6\n"
+                        },
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:46.919Z: Opening practice sites dropdown\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:51.973Z: Successfully navigated to practice site 6\n"
+                        },
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:35:04.973Z: Fixture teardown completed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T10:34:39.490Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f04f866db03e2ac9f6ef-9b1611e1da14771fb96b",
+              "file": "uiPlayground.spec.js",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "verify page heading and interact with all elements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 31113,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:40.085Z: Setting up practiceSitePage fixture\n"
+                        },
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:40.086Z: Navigating to https://testerbud.com/\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:34:52.376Z: Homepage loaded successfully\n"
+                        },
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:52.378Z: Selecting practice site at index 6\n"
+                        },
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:34:52.378Z: Opening practice sites dropdown\n"
+                        },
+                        {
+                          "text": "\u001b[32m[SUCCESS]\u001b[0m 2025-12-31T10:35:00.553Z: Successfully navigated to practice site 6\n"
+                        },
+                        {
+                          "text": "\u001b[36m[INFO]\u001b[0m 2025-12-31T10:35:10.350Z: Fixture teardown completed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-31T10:34:39.487Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f04f866db03e2ac9f6ef-1047a984fcf6ecb6c06d",
+              "file": "uiPlayground.spec.js",
+              "line": 15,
               "column": 7
             }
           ]
@@ -176,9 +288,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-30T20:57:45.966Z",
-    "duration": 20655.446,
-    "expected": 1,
+    "startTime": "2025-12-31T10:34:37.737Z",
+    "duration": 33121.668000000005,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

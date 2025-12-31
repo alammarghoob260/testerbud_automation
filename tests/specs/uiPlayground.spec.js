@@ -3,9 +3,10 @@ import { test } from '../../src/fixtures/homeFixtures.js';
 import { ExplorePage } from '../../src/pages/UIElementAutomation/explorePage.js';
 import { BasicElementsPage } from '../../src/pages/UIElementAutomation/BasicElementsPage.js';
 import { InteractiveElementsPage } from '../../src/pages/UIElementAutomation/InteractiveElementsPage.js';
+import { ComplexElementsPage } from '../../src/pages/UIElementAutomation/ComplexElementPage';
 import { uiPlaygroundData } from '../../src/utils/testData.js';
 
-test.describe('UI Playground - Explore + Basic + Interactive Elements', () => {
+test.describe('UI Playground - Explore + Basic + Interactive + Complex Elements', () => {
   test.beforeEach(async ({ practiceSitePage }) => {
     const { selectPracticeSite } = practiceSitePage;
     await selectPracticeSite(6); // ✅ UI Playground
@@ -16,6 +17,7 @@ test.describe('UI Playground - Explore + Basic + Interactive Elements', () => {
     const explore = new ExplorePage(page);
     const basic = new BasicElementsPage(page);
     const interactive = new InteractiveElementsPage(page);
+    const complex = new ComplexElementsPage(page);
 
     // --- Explore Page ---
     expect(await explore.verifyPageLoaded()).toBeTruthy();
@@ -71,5 +73,22 @@ test.describe('UI Playground - Explore + Basic + Interactive Elements', () => {
 
     await interactive.incrementProgress();
     await expect(interactive.progressOutput).toContainText(uiPlaygroundData.progressOutput);
+
+    // --- Complex Elements ---
+    await complex.openModal();
+    await expect(complex.modalOutputBox).toContainText(uiPlaygroundData.modalOutputText);
+    await complex.closeModal();
+
+    // await complex.enterDate('2025-12-31');
+    // await expect(complex.dateOutput).toContainText(uiPlaygroundData.dateOutput);
+
+    // await complex.uploadFile('tests/assets/sample.txt'); // ✅ replace with actual file path
+    // await complex.simulateDownload();
+    // await expect(complex.fileOutput).toContainText(uiPlaygroundData.fileOutput);
+
+    // await complex.performDragAndDrop();
+    // await expect(complex.dragDropOutput).toContainText(uiPlaygroundData.dragDropOutput);
+
+    // await expect(complex.iframeOutput).toContainText(uiPlaygroundData.iframeOutput);
   });
 });

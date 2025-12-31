@@ -1,14 +1,42 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="20.655446">
-<testsuite name="uiPlayground.spec.js" timestamp="2025-12-30T20:57:46.004Z" hostname="chromium" tests="1" failures="0" skipped="0" time="18.699" errors="0">
-<testcase name="UI Playground - Explore + Basic Elements › verify page heading and interact with basic elements" classname="uiPlayground.spec.js" time="18.699">
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="33.12166800000001">
+<testsuite name="uiPlayground.spec.js" timestamp="2025-12-31T10:34:37.802Z" hostname="chromium" tests="1" failures="0" skipped="0" time="27.557" errors="0">
+<testcase name="UI Playground - Explore + Basic + Interactive + Complex Elements › verify page heading and interact with all elements" classname="uiPlayground.spec.js" time="27.557">
 <system-out>
-<![CDATA[[36m[INFO][0m 2025-12-30T20:57:48.109Z: Setting up practiceSitePage fixture
-[36m[INFO][0m 2025-12-30T20:57:48.110Z: Navigating to https://testerbud.com/
-[32m[SUCCESS][0m 2025-12-30T20:57:59.747Z: Homepage loaded successfully
-[36m[INFO][0m 2025-12-30T20:57:59.748Z: Selecting practice site at index 6
-[36m[INFO][0m 2025-12-30T20:57:59.748Z: Opening practice sites dropdown
-[32m[SUCCESS][0m 2025-12-30T20:58:04.082Z: Successfully navigated to practice site 6
-[36m[INFO][0m 2025-12-30T20:58:06.342Z: Fixture teardown completed
+<![CDATA[[36m[INFO][0m 2025-12-31T10:34:39.842Z: Setting up practiceSitePage fixture
+[36m[INFO][0m 2025-12-31T10:34:39.844Z: Navigating to https://testerbud.com/
+[32m[SUCCESS][0m 2025-12-31T10:34:50.970Z: Homepage loaded successfully
+[36m[INFO][0m 2025-12-31T10:34:50.971Z: Selecting practice site at index 6
+[36m[INFO][0m 2025-12-31T10:34:50.971Z: Opening practice sites dropdown
+[32m[SUCCESS][0m 2025-12-31T10:34:58.395Z: Successfully navigated to practice site 6
+[36m[INFO][0m 2025-12-31T10:35:06.963Z: Fixture teardown completed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="uiPlayground.spec.js" timestamp="2025-12-31T10:34:37.802Z" hostname="firefox" tests="1" failures="0" skipped="0" time="24.601" errors="0">
+<testcase name="UI Playground - Explore + Basic + Interactive + Complex Elements › verify page heading and interact with all elements" classname="uiPlayground.spec.js" time="24.601">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-31T10:34:41.929Z: Setting up practiceSitePage fixture
+[36m[INFO][0m 2025-12-31T10:34:41.930Z: Navigating to https://testerbud.com/
+[32m[SUCCESS][0m 2025-12-31T10:34:46.918Z: Homepage loaded successfully
+[36m[INFO][0m 2025-12-31T10:34:46.919Z: Selecting practice site at index 6
+[36m[INFO][0m 2025-12-31T10:34:46.919Z: Opening practice sites dropdown
+[32m[SUCCESS][0m 2025-12-31T10:34:51.973Z: Successfully navigated to practice site 6
+[36m[INFO][0m 2025-12-31T10:35:04.973Z: Fixture teardown completed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="uiPlayground.spec.js" timestamp="2025-12-31T10:34:37.802Z" hostname="webkit" tests="1" failures="0" skipped="0" time="31.113" errors="0">
+<testcase name="UI Playground - Explore + Basic + Interactive + Complex Elements › verify page heading and interact with all elements" classname="uiPlayground.spec.js" time="31.113">
+<system-out>
+<![CDATA[[36m[INFO][0m 2025-12-31T10:34:40.085Z: Setting up practiceSitePage fixture
+[36m[INFO][0m 2025-12-31T10:34:40.086Z: Navigating to https://testerbud.com/
+[32m[SUCCESS][0m 2025-12-31T10:34:52.376Z: Homepage loaded successfully
+[36m[INFO][0m 2025-12-31T10:34:52.378Z: Selecting practice site at index 6
+[36m[INFO][0m 2025-12-31T10:34:52.378Z: Opening practice sites dropdown
+[32m[SUCCESS][0m 2025-12-31T10:35:00.553Z: Successfully navigated to practice site 6
+[36m[INFO][0m 2025-12-31T10:35:10.350Z: Fixture teardown completed
 ]]>
 </system-out>
 </testcase>

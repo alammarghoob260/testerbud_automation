@@ -20,11 +20,19 @@ export const uiPlaygroundData = {
   // Interactive Elements
   linkOutput: 'Click the link',
   imageOutput: 'Click the image',
-  tableOutput: 'Click a table header to "sort"',
+  tableOutput: 'Table sorted by name',
   tooltipOutput: 'Hover over "Hover Me"',
   sliderValue: '50',
   sliderOutput: 'Slider Value: 50',
-  progressOutput: 'Progress: 30%',
+  progressOutput: 'Progress: 40%',
+
+  // --- Complex Elements ---
+  modalOutputText: 'Modal is open',
+  modalOutputBox: 'Modal is open',
+  dateOutput: 'Date selected: 2025-12-31',
+  fileOutput: 'No file selected',
+  dragDropOutput: 'Drag "Drag Me" to "Drop Here"',
+  iframeOutput: 'Iframe loaded',
 };
 
 // 📝 Web Form Data (for registration / forms)
